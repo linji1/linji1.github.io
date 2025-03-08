@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,30 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-893" class="post_list">
+	  <a href="/b3/893.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让孩子从“逼着学”到“主动学”：最好的教育，是唤醒他们的内驱力</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/893.html"><p>物质条件这么好，为什么有的孩子却整天懒懒散散，动不动就“无聊”“躺平”？</p>
+<p>为什么一提学习，孩子要么拖延，要么就很烦躁？</strong></p>
+<p>青春期的孩子总是让人头疼，特别是一提学习，全身都是反骨。</p>
+<p>家长们使尽浑身解数，奖励惩罚，连哄带骗，讲道理……折腾自己和孩子一通，依然觉得孩子懒散、拖延，越鞭策越不动，甚至直接躺平摆烂、放弃学习。</p>
+<p>那么，到底怎么做才能培养一个有“自驱力”的孩子？</p>
+<p>美国心理学家德西（Deci Edward L.）和瑞恩（Ryan Richard）提出的“<strong>自我决定理论</strong>”，从根本上回答了这个问题：我们要努力满足<strong>人的三种心理需求——自主、胜任、联结</strong>，才能增强人的内在动机，促进外部的动机内化。这也给我们如何让孩子从“被推”到“自推”提供了思路。</p>
+<p><strong>给孩子“掌控感”他需要你放手</strong></p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-01-18 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(731) <a href="/b3/893.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-892" class="post_list">
 	  <a href="/b3/892.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">（五年级语文）2023~2024学年度第一学期期末教学质量检测</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b3/892.html"><div style="height: 412px;overflow: hidden;"><center><img src="/assets/file/2024/02/2024020201.webp"   width="100%"    height="auto"></center></div></div>	  
@@ -342,7 +368,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(683) <a href="/b3/892.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(690) <a href="/b3/892.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -353,7 +379,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(679) <a href="/b3/891.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(687) <a href="/b3/891.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -371,7 +397,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-15 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(665) <a href="/b6/890.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(672) <a href="/b6/890.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -382,7 +408,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-15 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(591) <a href="/b6/889.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(600) <a href="/b6/889.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -393,7 +419,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-10 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(554) <a href="/b2/888.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(565) <a href="/b2/888.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -406,7 +432,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-03 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(617) <a href="/b6/887.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(626) <a href="/b6/887.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -417,7 +443,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-01-02 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(634) <a href="/b6/886.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(642) <a href="/b6/886.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -430,7 +456,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2023-12-27 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(694) <a href="/b7/885.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(702) <a href="/b7/885.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -450,30 +476,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2023-12-26 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(610) <a href="/b6/884.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-883" class="post_list">
-	  <a href="/b0/883.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">清醒且强大的人生句子，将自己活成自己最强大的依靠</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/883.html"><p>1、坚硬的城市里没有柔软的爱情。生活不是林黛玉，不会因为忧伤而风情万种。</p>
-
-<p>2、人往往在闲得发慌的时候最矫情最脆弱，在深渊挣扎的时候最清醒最坚强。</p>
-
-<p>3、人生在世，因利而忙得失常在。宁可吃亏也不要结怨，失去是眼前利益，而结怨却会增加做人的长期成本。</p>
-
-<p>4、愿你在漫长的岁月里，将自己活成自己最强大的依靠。懂得感恩，保持清醒，保持独立，不亏欠别人，更不委屈自己。</p>
-
-<p>5、道理不会赐予你捷径，它只会让那些一直在一步一步往前走的人，过上比昨天更好的人生。 </p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2023-12-24 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(678) <a href="/b0/883.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(618) <a href="/b6/884.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-17.html'>&lt;</a><a href='index-16.html'>16</a><a href='index-17.html'>17</a><span class="current">18</span><a href='index-19.html'>19</a><a href='index-20.html'>20</a><a href='index-19.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-17.html'>&lt;</a><a href='index-16.html'>16</a><a href='index-17.html'>17</a><span class="current">18</span><a href='index-19.html'>19</a><a href='index-20.html'>20</a><a href='index-19.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -839,7 +846,11 @@ document.body.addEventListener('input', POWERMODE);
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数

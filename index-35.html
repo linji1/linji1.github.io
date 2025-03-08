@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,27 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-709" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/709.html"><div style="height: 412px;overflow: hidden;">【温馨提示】各小学：教师个人所得税六项专项附加扣除和扣缴申报每年一次，2022年的申报现在可以操作了。未在手机中安装个人所得税APP的，请按发在微信上的《“个人所得税”APP下载安装及注册指引》要求安装，然后进入APP修改更新或重新录入相关信息。请提醒教师于12月30日前完成个人所得税六项专项附加扣除操作。操作方法如下：<br><br>
+
+一、2021年已申报个税扣除，2022年继续享受的，请进入手机“个人所得税”APP，点击“开始确认2022年度专项附加扣除”下面的“进入”。不变化的直接选择年度后点击“一键带入”，再点击“确定”即可。如果某一项扣除出现绿色“待确认”，表示2022年可以继续享受，如果要更新就改，没错就不改；如果出现红色“已失效”，表示时间等信息2022年不能再继续享受专项附加扣除，必须进入该项并点击“修改”，更改时间等信息，使其符合享受条件，这样才出现绿色“待确认”，然后点击手机屏右上角的“一键确认”即可。<br><br>
+二、如果是重新注册、重新录入信息，进入手机“个人所得税”APP并点击“申报专项附加扣除”，然后按以下操作步骤完成：</div></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-12-21 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2211) <a href="/b6/709.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-708" class="post_list">
 	        <div class="excerpt">
 	  <div class="thumbnail"><a href="/b1/708.html"><img src="/assets/file/2021/12/s_104248_695523864.jpg" /></a></div>	  <div class="textPost" data-url="/b1/708.html">第 24 张证书：林继老师：在岭南师范学院承办的“2021年广东省世行贷款：村小、教学点教师全科教学能力提升培训”项目中，表现突出，成绩优异。特发此证，以资鼓励！岭南师范学院教育科学学院，2021年11月28日</div>	  
@@ -342,7 +365,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-11-28 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2496) <a href="/b1/708.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2508) <a href="/b1/708.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -353,7 +376,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-11-26 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2108) <a href="/b2/707.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2117) <a href="/b2/707.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -364,7 +387,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-09-16 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2598) <a href="/b2/706.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2606) <a href="/b2/706.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -375,7 +398,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-09-14 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2862) <a href="/b2/705.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2869) <a href="/b2/705.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -386,7 +409,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-09-08 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2448) <a href="/b6/704.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2454) <a href="/b6/704.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -404,7 +427,7 @@ d.ll -al:;以列表的形式列出当前下的文件夹和文件的名字 显示
 	  <div class="meta">
 	  <p class="time">2021-08-03 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2549) <a href="/b7/702.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2554) <a href="/b7/702.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -420,7 +443,7 @@ d.ll -al:;以列表的形式列出当前下的文件夹和文件的名字 显示
 	  <div class="meta">
 	  <p class="time">2021-07-31 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2710) <a href="/b6/701.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2720) <a href="/b6/701.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -443,7 +466,7 @@ d.ll -al:;以列表的形式列出当前下的文件夹和文件的名字 显示
 	  <div class="meta">
 	  <p class="time">2021-07-31 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2673) <a href="/b7/700.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2682) <a href="/b7/700.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -605,22 +628,11 @@ table td:last-child {
 	  <div class="meta">
 	  <p class="time">2021-07-30 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2463) <a href="/b0/699.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-698" class="post_list">
-	  <a href="/b2/698.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2021年公需课考试答案</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b2/698.html"><center><img src="/assets/file/2021/06/2021061005.webp"   width="100%"    height="auto"></center></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2021-07-30 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3519) <a href="/b2/698.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2474) <a href="/b0/699.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-34.html'>&lt;</a><a href='index-33.html'>33</a><a href='index-34.html'>34</a><span class="current">35</span><a href='index-36.html'>36</a><a href='index-37.html'>37</a><a href='index-36.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-34.html'>&lt;</a><a href='index-33.html'>33</a><a href='index-34.html'>34</a><span class="current">35</span><a href='index-36.html'>36</a><a href='index-37.html'>37</a><a href='index-36.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -986,7 +998,11 @@ table td:last-child {
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数

@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,56 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-244" class="post_list">
+	  <a href="/b3/244.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">[五级数学] 2010~2011学年度第二学期期中联合调研测试试卷</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/244.html"><div id="gallery-1" class="gallery">
+
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+<img src="/assets/file/2020/03/Image_00413.jpg" alt="" title="Image_00413"  class="alignnone size-full wp-image-3724">
+</dt></dl>
+
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+<img src="/assets/file/2020/03/Image_00414.jpg" alt="" title="Image_00414"  class="alignnone size-full wp-image-3725">
+</dt></dl>
+
+</div>
+<style type="text/css">
+#gallery-1 {
+	margin: auto;
+}
+
+#gallery-1 .gallery-item {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 50%;
+}
+
+#gallery-1 img {
+	border: 2px solid #cfcfcf;
+}
+
+#gallery-1 .gallery-caption {
+	margin-left: 0;
+}
+</style></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2011-05-02 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2742) <a href="/b3/244.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-243" class="post_list">
 	  <a href="/b3/243.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">[四级数学] 2011~2011学年度第二学期期中联合调研测试试卷</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b3/243.html"><div id="gallery-1" class="gallery">
@@ -374,7 +426,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2748) <a href="/b3/243.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2754) <a href="/b3/243.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -416,7 +468,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2891) <a href="/b3/242.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2895) <a href="/b3/242.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -458,7 +510,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2740) <a href="/b3/241.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2744) <a href="/b3/241.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -500,7 +552,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2674) <a href="/b3/240.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2679) <a href="/b3/240.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -542,7 +594,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2816) <a href="/b3/239.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2820) <a href="/b3/239.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -584,7 +636,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2813) <a href="/b3/238.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2817) <a href="/b3/238.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -595,7 +647,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  <span class="ico jin">禁</span>	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2481) <a href="/b8/237.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2484) <a href="/b8/237.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -606,7 +658,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  <span class="ico jin">禁</span>	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3038) <a href="/b8/236.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3041) <a href="/b8/236.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -617,22 +669,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2011-05-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2607) <a href="/b8/235.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-234" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b8/234.html">今天要回校给六年级的学生补课，虽说他们不想学习，但是为了小考，尽人事，听天命吧！我想放假回校后再将资料奖给他们。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2011-05-02 通过网页 
-	  	  	  <span class="ico jin">禁</span>	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2824) <a href="/b8/234.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2611) <a href="/b8/235.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-77.html'>&lt;</a><a href='index-76.html'>76</a><a href='index-77.html'>77</a><span class="current">78</span><a href='index-79.html'>79</a><a href='index-80.html'>80</a><a href='index-79.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-77.html'>&lt;</a><a href='index-76.html'>76</a><a href='index-77.html'>77</a><span class="current">78</span><a href='index-79.html'>79</a><a href='index-80.html'>80</a><a href='index-79.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -998,7 +1039,11 @@ document.body.addEventListener('input', POWERMODE);
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数

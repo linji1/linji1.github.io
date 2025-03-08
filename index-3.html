@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,25 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-1063" class="post_list">
+	  <a href="/b8/1063.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">✅202501001-运送课本回校并报名</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b8/1063.html">运送课本回校（林继、黄丽），按班级分拣好课本。 2月12日正式报名，2月13日开始上课。<br>
+<img src="/assets/file/2025/02/2025021001.webp" style="max-width:100%;"></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2025-02-10 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(221) <a href="/b8/1063.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-1062" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b6/1062.html">【通知】各小学：1、请于2025年2月10日（农历正月十三日）上午9：50(全体教师会议结束后),派几位教师带学校公章，自带袋子到教育指导组领取并清点课本及教辅材料。要求当天上午取完课本，签收并盖学校公章；2、如果与订单不相符的请当场与书店工作人员联系，询问欠缺原因，确实欠缺的（未运来课本除外），书面写好年级、科目及数量，盖章后交给书店工作人员或交给陈泽同志收齐再统一追加。［杨家镇中心小学教育指导组2025年2月9日下午］</div>	  
@@ -342,7 +363,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-02-09 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(183) <a href="/b6/1062.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(191) <a href="/b6/1062.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -353,7 +374,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-02-08 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(191) <a href="/b6/1061.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(198) <a href="/b6/1061.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -364,7 +385,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-02-02 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(351) <a href="/b6/1060.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(358) <a href="/b6/1060.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -375,7 +396,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-27 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(401) <a href="/b6/1053.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(408) <a href="/b6/1053.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -386,7 +407,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-27 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(405) <a href="/b8/1052.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(418) <a href="/b8/1052.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -397,7 +418,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-27 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(377) <a href="/b8/1051.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(392) <a href="/b8/1051.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -408,7 +429,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-25 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(402) <a href="/b2/1050.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(420) <a href="/b2/1050.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -423,7 +444,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-15 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(483) <a href="/b3/1047.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(495) <a href="/b3/1047.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -450,25 +471,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-12 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(479) <a href="/b6/1046.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1045" class="post_list">
-	  <a href="/b7/1045.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">windows开机启动项配置</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/1045.html"><p>1.win+R启动控制台</p>
-<p>2.键入 shell:startup</p>
-<p>3.找到需要开机启动的程序</p>
-<p>4.创建快捷方式拖入刚才打开的窗口</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-01-11 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(427) <a href="/b7/1045.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(490) <a href="/b6/1046.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -834,7 +841,11 @@ document.body.addEventListener('input', POWERMODE);
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数

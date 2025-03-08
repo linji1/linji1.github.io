@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,28 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-593" class="post_list">
+	  <a href="/b0/593.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">从教近三十年老教师的忠告</h2></a>      <div class="excerpt">
+	  <div class="thumbnail"><a href="/b0/593.html"><img src="/assets/file/2020/05/s_003659_2029441043.png" /></a></div>	  <div class="textPost" data-url="/b0/593.html">一、少关心体制上的事，不要在意工资高不高，职位高不高；多关心体质上的事，在意自己的血压高不高，血糖高不高。多活几年，啥都能找补回来。<br>
+二、不要到了学校拿自己当家长，这会坑了人家的娃；不要到了家里还拿自己当老师，这会坑了自家的娃。<br>
+三、别偏爱好学生，好学生考上大学是他努力，考不上往往是你没教好，很少有好学生回来看老师；别歧视差生，培养一个合格公民，减少一个可能危害社会的孩子，远比培养大学生贡献大。<br>
+四、要有教育的远见和定力，别应试教育搞魔怔了，顺便搭上自己的娃。<br>
+五、不要太在意教师职称，要在意作为教师是否称职。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-05-14 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3532) <a href="/b0/593.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-592" class="post_list">
 	  <a href="/b0/592.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">开学第一天</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b0/592.html"><img src="/assets/file/2020/05/b_212803_645584871.jpg" style="max-width:100%;"></div>	  
@@ -342,7 +366,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-05-11 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2950) <a href="/b0/592.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2956) <a href="/b0/592.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -354,7 +378,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-30 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3349) <a href="/b6/591.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3357) <a href="/b6/591.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -365,7 +389,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-30 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3659) <a href="/b0/590.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3670) <a href="/b0/590.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -376,7 +400,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-22 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4014) <a href="/b6/589.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4038) <a href="/b6/589.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -387,7 +411,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2006) <a href="/b2/588.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2010) <a href="/b2/588.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -398,7 +422,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3709) <a href="/b8/586.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3732) <a href="/b8/586.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -409,7 +433,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-17 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3370) <a href="/b0/585.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3382) <a href="/b0/585.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -420,7 +444,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-16 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(11039) <a href="/b0/584.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(11046) <a href="/b0/584.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -445,22 +469,11 @@ sum就是将各个值相加。形如：1+1+0+1+0+1+1+0+1+1</div>
 	  <div class="meta">
 	  <p class="time">2020-04-12 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3171) <a href="/b7/583.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-582" class="post_list">
-	  <a href="/b7/582.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">关于layui.open()如何传递参数</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/582.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-tag"><<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">\"layui-btn</span> <span class="hljs-attribute">layui-btn-primary</span> <span class="hljs-attribute">layui-btn-xs</span>\" <span class="hljs-attribute">onClick</span>=<span class="hljs-value">\"jizhang_modify('编辑','edit.php','".$rows[0]."')\"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">\"color:</span> <span class="hljs-attribute">white</span>;<span class="hljs-attribute">width:</span> <span class="hljs-attribute">34px</span>;<span class="hljs-attribute">background-color:</span> #<span class="hljs-attribute">009688</span>;<span class="hljs-attribute">height:</span> <span class="hljs-attribute">22px</span>;<span class="hljs-attribute">line-height:</span> <span class="hljs-attribute">22px</span>;<span class="hljs-attribute">padding:</span> <span class="hljs-attribute">0</span> <span class="hljs-attribute">5px</span>;<span class="hljs-attribute">font-size:</span> <span class="hljs-attribute">12px</span>;\" <span class="hljs-attribute">value</span>=<span class="hljs-value">\"编辑\"</span>></span></code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-04-11 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4002) <a href="/b7/582.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3179) <a href="/b7/583.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-45.html'>&lt;</a><a href='index-44.html'>44</a><a href='index-45.html'>45</a><span class="current">46</span><a href='index-47.html'>47</a><a href='index-48.html'>48</a><a href='index-47.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-45.html'>&lt;</a><a href='index-44.html'>44</a><a href='index-45.html'>45</a><span class="current">46</span><a href='index-47.html'>47</a><a href='index-48.html'>48</a><a href='index-47.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -826,7 +839,11 @@ sum就是将各个值相加。形如：1+1+0+1+0+1+1+0+1+1</div>
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数

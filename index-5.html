@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -215,7 +215,16 @@ $(document).ready(function() {
 <div class="other-wrap collapse">
 	  <div class="other box-m">
 	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+<script>
+var items = document.querySelectorAll('#title a');
+var currentUrl = window.location.href;
 
+if (currentUrl.includes('linji1.github.io')) {
+    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+} else if (currentUrl.includes('linji.cn')) {
+    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+}
+</script>
 <!-- activity-power-mode 打字效果 -->
 <script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
@@ -328,13 +337,24 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-1036" class="post_list">
+	  <a href="/b0/1036.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州各镇的村庄简史及姓氏来源（北和篇）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/1036.html"><p>北和镇始建于南宋末年，原为北和营。北和镇原名“北河”，为溪河北域之意。明朝万历年间改为“北和”，“河”与“和”为同音，“和”是和睦相处的意思。清康熙元年（1662年）迁往北和圩。解放初期，属于海康县第四区。1957年3月，分为北和、康港、交寮三乡，11月又并为北和乡。1958年，属雷南县卫星公社。1961年，废公社置北和区。1966年，改称北和公社。1984年，改称为北和区。1987年4月，改称为北和镇。</p><p>雷州北和镇下辖北和、康港、北糖等3个居委会和北和、鹅感、标角、调逻、博怀、格内、新家、洋家、高蓬、斗六、红屋、北样、金竹、英兜、交寮、和家、贤洋、调和、那胆、调罗、潭葛、康村、吴蓬、境庄、刘张、徐黄、南边黄、盐庭等28个村委会。</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2025-01-06 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(593) <a href="/b0/1036.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-1035" class="post_list">
 	  <a href="/b0/1035.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州各镇的村庄简史及姓氏来源（南兴篇）</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b0/1035.html"><p>南兴镇始建于嘉庆二十五年（1820）。南兴取意为“置古雷州城之南，众望其兴也”。民国时期称为南兴区公所解放初期，属海康县第二区。1957年，分南兴、东林两乡。1958年，属雷南县先锋公社。1961年，分出属南兴区；后又析出成立南兴公社。1984年，改称为南兴区。1987年4月，改称为南兴镇。</p><p>南兴镇下辖 1 个社区和 33 个村委会，社区为南兴社区，村委会包括东仓、东吴、东岳、东市、东村、东林、南渡、善排、塘头、夏初、外园、宋村、山内、山尾、平兰、新村、梅田、步月、深田、清坭、港东、港西、田东、芝园、花桥、荇州、草洋、袁新、高朗、高田、麻参、麻廉等。</p></div>	  
@@ -342,7 +362,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(495) <a href="/b0/1035.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(513) <a href="/b0/1035.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -353,7 +373,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(591) <a href="/b0/1034.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(612) <a href="/b0/1034.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -364,7 +384,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(664) <a href="/b0/1033.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(681) <a href="/b0/1033.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -375,7 +395,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(632) <a href="/b0/1032.html#comments"><i class="iconfont icon-com"></i> 评论(2)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(736) <a href="/b0/1032.html#comments"><i class="iconfont icon-com"></i> 评论(2)</a> 
 	 
 	</p></div></div> 
 	 
@@ -386,7 +406,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(573) <a href="/b0/1031.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(588) <a href="/b0/1031.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -397,7 +417,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(498) <a href="/b0/1030.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(509) <a href="/b0/1030.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -408,7 +428,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(592) <a href="/b0/1029.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(602) <a href="/b0/1029.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -419,7 +439,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(678) <a href="/b0/1028.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(689) <a href="/b0/1028.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -430,22 +450,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(650) <a href="/b0/1027.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1026" class="post_list">
-	  <a href="/b0/1026.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州各镇的村庄简史及姓氏来源（东里篇）</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/1026.html"><p>东里镇，始建于民国二十七年（1938）7月，其命名来源于古典名句“子产居东里”及伟家祠堂所挂雷州府授的牌匾“保固东里”。民国三十六年（1947），设立东里区，辖有东里、雷高、调风、官贤、新寮等乡。民国三十八年（1949）2月，建立东里乡。1958年，属雷南县先锋公社。1961年，设立东里区。1974年，改称东里公社。1984年，改称为东里区公所。1988年，改称为东里镇。</p><p>东里镇下辖 1 个社区和 20 个村委会：东里社区和白岭、三吉、北堀、甲六、西坡、英佳塘、东塘、西挖、东里、东寮、后葛、北坑、六格、土头、淡水、南头、七联、洪流、下湖、沙节等村委会</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-01-06 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(598) <a href="/b0/1026.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(656) <a href="/b0/1027.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1002 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-4.html'>&lt;</a><a href='index-3.html'>3</a><a href='index-4.html'>4</a><span class="current">5</span><a href='index-6.html'>6</a><a href='index-7.html'>7</a><a href='index-6.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
+		<span class="info"> 共计：1003 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-4.html'>&lt;</a><a href='index-3.html'>3</a><a href='index-4.html'>4</a><span class="current">5</span><a href='index-6.html'>6</a><a href='index-7.html'>7</a><a href='index-6.html'>&gt;</a><a href='index-101.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -811,7 +820,11 @@ document.body.addEventListener('input', POWERMODE);
 	 </div>
 </div>
 	    </div>
-<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–<span id="copyrightYear"></span>&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+</script>
 <!--计时功能代码-->
     <script language="javascript">
         // 判断是否为闰年的函数
