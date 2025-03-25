@@ -355,6 +355,72 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-627" class="post_list">
+	  <a href="/b7/627.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">PHP数据类型转换(字符转数字,数字转字符)</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/627.html"><p>原文链接：<a href="http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html" style="">http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html</a></p><p>PHP的数据类型转换属于强制转换，允许转换的PHP数据类型有：</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">（int）、（integer）：转换成整形
+（float）、（double）、（real）：转换成浮点型
+（string）：转换成字符串
+（bool）、（boolean）：转换成布尔类型
+（array）：转换成数组
+（object）：转换成对象</code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-12-20 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2741) <a href="/b7/627.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-626" class="post_list">
+	  <a href="/b7/626.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑使用技巧</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/626.html">win10 家庭中文版打开本地组策略编辑器：解决方案<br><br>
+
+　　新建一个txt文件-->将以下内容进行拷贝<br><br>
+
+pushd "%~dp0"<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt<br>
+for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
+　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；<br><br>
+
+　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； <br><br>
+
+　　将生成的bat文件和List.txt文件进行删除即可。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(7370) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-625" class="post_list">
+	  <a href="/b7/625.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让指定的div层在网页打开几秒后自动隐藏关闭</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/625.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">如果是jquery
+
+&lt;script&gt;
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{$(<span class="hljs-string">"#这里放id"</span>).hide()},<span class="hljs-number">1000</span>)<span class="hljs-comment">//1000是1秒</span>
+
+&lt;<span class="hljs-regexp">/script&gt;
+
+如果没有jquery
+
+&lt;script&gt;
+
+setTimeout(function(){document.getElementById("这里放id").style.display = "none"},1000)/</span><span class="hljs-regexp">/id是你要隐藏zhi的div的id 1000是1秒
+
+&lt;/</span>script&gt;
+
+把代码放在网页&lt;<span class="hljs-regexp">/body&gt;前面</span></code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-20 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3878) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-624" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b0/624.html">1.严格按照学校入校、离校的错锋时间接送孩子，确保不造成拥堵。<br>
@@ -373,7 +439,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3552) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3566) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -384,7 +450,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3033) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3048) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -399,7 +465,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3814) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3828) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -412,7 +478,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-16 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2800) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2806) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -423,7 +489,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-24 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3085) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3093) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -434,7 +500,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-22 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3192) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3200) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -458,56 +524,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3103) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-617" class="post_list">
-	  <a href="/b7/617.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑桌面上的文件夹变成白色的图标如何解决</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/617.html">在我们使用电脑的过程中，经常会遇到各种各样的问题。有时候会突然发现电脑桌面上文件夹的图标变成了白色的图标，但是还是可以正常打开。那么，遇到这样的问题应该如何解决呢?<br>
-1、先打开文本文档，输入以下代码；<br>
-2、将文件另存为bat格式文件；<br>
-3、双击运行这个bat文件即可。<br>
-通过上述的方法就可以解决电脑桌面上的文件夹图标显示异常，变成白色的图标的问题。<br>
-<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">@echo off
-taskkill /f /im explorer.exe
-CD /d %userprofile%\AppData\Local
-DEL IconCache.db /a
-start explorer.exe
-cho 执行完成</code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-17 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4596) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-616" class="post_list">
-	  <a href="/b0/616.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">第36个教师节：四年级四个学生，1男3女</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/616.html"><center><a href="/assets/file/2020/09/202009101.jpg" data-fancybox="gallery"><img src="/assets3/file/2020/09/202009101.jpg" width="100%" height="auto" </a></center></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-10 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2950) <a href="/b0/616.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-614" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b8/614.html">正在运送课本回校（林继、黄丽、陈娇凤），按班级分拣好课本。开始使用网上登记报名，核对学生、家长身份证号码、家长手机号码。<br>
-
-<a href="/assets/file/2020/08/2020082701.webp" data-fancybox="gallery"><img src="/assets3/file/2020/08/2020082701.webp" style="max-width:100%;"></a></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-28 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2998) <a href="/b8/614.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3117) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1013 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-43.html'>&lt;</a><a href='index-42.html'>42</a><a href='index-43.html'>43</a><span class="current">44</span><a href='index-45.html'>45</a><a href='index-46.html'>46</a><a href='index-45.html'>&gt;</a><a href='index-102.html'>尾页</a>	</div>
+		<span class="info"> 共计：1016 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-43.html'>&lt;</a><a href='index-42.html'>42</a><a href='index-43.html'>43</a><span class="current">44</span><a href='index-45.html'>45</a><a href='index-46.html'>46</a><a href='index-45.html'>&gt;</a><a href='index-102.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
