@@ -355,6 +355,47 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-630" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/630.html">【通知】各小学：根据杨家镇党委要求，现决定2020年12月25日（星期五）上午9：00在杨家镇中心管理组一楼会议室召开全体党员会议，成立中共雷州市杨家镇中心小学总支部委员会，选举总支部委员。本次会议要求全体党员参加，党员名单详见微信上面的《（2020.12）雷州市杨家镇中心小学党支部党员花名册》，希各校及时通知党员依时参加（在职党员不准缺席，退休党员按《2020年12月杨家镇小学退休教师管理安排表》的编排由相关学校通知，各学校要逐一通知到位，动员退休党员一定要参加会议），勿误。［杨家镇中心管理组2020年12月23日下午送发］</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-12-23 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2996) <a href="/b6/630.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-629" class="post_list">
+	  <a href="/b7/629.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让php强制使用https协议（http自动跳转到https）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/629.html">其实很简单，在你的程序引用的全局脚本加上
+<br>
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="php hljs" codemark="1"><span class="hljs-keyword">if</span>(<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"SERVER_PORT"</span>] !== <span class="hljs-string">'443'</span>) {
+  header(<span class="hljs-string">'location:https://'</span>.<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'SERVER_NAME'</span>].<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'REQUEST_URI'</span>]);
+  <span class="hljs-keyword">exit</span>;
+}</code></pre>
+应该是通用的<br>
+如果你没有引用的全局脚本，建议你写一个（更方便你的开发），本人建议有能力的用上框架，是不错的<br>
+有的人会问我怎么不使用$_SERVER["HTTPS"]变量，因为这个是局限性的，fastcgi等是无用的（例如nginx），而$_SERVER["SERVER_PORT"]是一定存在的，无论是apache还是nginx等等都可以使用</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-12-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2844) <a href="/b7/629.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-628" class="post_list">
+	  <a href="/b6/628.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州市“新时代教师职业行为准则及其违规处理办法”测试题（2020.12）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/628.html">【通知】各学校：雷州市“新时代教师职业行为准则及其违规处理办法”统一测试题（电子版）已发至各学校德育邮箱，请各学校于12月21日晚上前组织所有教师完成测试（答案周一晚上完成测试后提供），并做好教师测试成绩登记存档工作。【雷州市教育局德育股】</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-12-21 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3022) <a href="/b6/628.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-627" class="post_list">
 	  <a href="/b7/627.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">PHP数据类型转换(字符转数字,数字转字符)</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b7/627.html"><p>原文链接：<a href="http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html" style="">http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html</a></p><p>PHP的数据类型转换属于强制转换，允许转换的PHP数据类型有：</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">（int）、（integer）：转换成整形
@@ -367,7 +408,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-12-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2741) <a href="/b7/627.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2753) <a href="/b7/627.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -390,7 +431,7 @@ for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-p
 	  <div class="meta">
 	  <p class="time">2020-10-22 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(7370) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(7380) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -417,7 +458,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 	  <div class="meta">
 	  <p class="time">2020-10-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3878) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3886) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -439,7 +480,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3566) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3580) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -450,7 +491,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3048) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3053) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -465,7 +506,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3828) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3830) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -478,57 +519,11 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 	  <div class="meta">
 	  <p class="time">2020-10-16 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2806) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-620" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/620.html">【国庆节、中秋节放假调休通知】根据上级有关规定及雷州市教育局通知要求，现将2020年国庆节、中秋节放假调休日期的具体安排通知如下：1、国庆节、中秋节放假调休时间为10月1日至8日（共8天），调休后9月27日（星期日）、10月10日（星期六）照常上班，学校分别上周三、周四课程；2、要做好放假前安全教育工作（保荐图片）及假期安全提醒工作；3、根据市委市政府要求，节假日期间，各学校要妥善安排好值班和安全、保卫等工作，遇有重大突发事件，要按规定及时报告并妥善处置，确保全体师生度过祥和平安的节假日；各校（园）于9月29日前把值班表发到收发群。【杨家镇中心小学2020.9.24】</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-24 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3093) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-619" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/619.html">【通知】各小学：现定于9月23日（星期三）下午3：00在管理组五楼召开教学教研工作会议，参加会议人员：教导主任（或管教学副校长）。［管理组2020年9月22日下午发送］</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-22 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3200) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-618" class="post_list">
-	  <a href="/b7/618.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">在网页里插入 MP3</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/618.html"><center><audio controls="" autoplay="">
-
-  <source src="https://img.tukuppt.com/newpreview_music/08/99/49/5c897788e421b53181.mp3" type="audio/mpeg">
-
-  您的浏览器不支持 audio 元素。
-
-</audio></center>
-<div><br></div><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-tag"><<span class="hljs-title">audio</span> <span class="hljs-attribute">controls</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">autoplay</span>=<span class="hljs-value">""</span>></span>
-
-  <span class="hljs-tag"><<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://img.tukuppt.com/newpreview_music/08/99/49/5c897788e421b53181.mp3"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"audio/mpeg"</span>></span>
-
-  您的浏览器不支持 audio 元素。
-
-<span class="hljs-tag"></<span class="hljs-title">audio</span>></span></code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-19 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3117) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2808) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1016 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-43.html'>&lt;</a><a href='index-42.html'>42</a><a href='index-43.html'>43</a><span class="current">44</span><a href='index-45.html'>45</a><a href='index-46.html'>46</a><a href='index-45.html'>&gt;</a><a href='index-102.html'>尾页</a>	</div>
+		<span class="info"> 共计：1019 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-43.html'>&lt;</a><a href='index-42.html'>42</a><a href='index-43.html'>43</a><span class="current">44</span><a href='index-45.html'>45</a><a href='index-46.html'>46</a><a href='index-45.html'>&gt;</a><a href='index-102.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
