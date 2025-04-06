@@ -355,6 +355,36 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-1044" class="post_list">
+	  <a href="/b7/1044.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Docker-Compose配置文件结构详解及命令</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1044.html"><p><strong>yaml文件结构</strong></p>
+<p>在项目名目录下创建docker-compose.yaml文件，文件结构如下</p>
+<p>version: '3' # 版本号</p>
+<p>services: # 服务类</p>
+<p>web: # web服务</p>
+<p>build: ../ # 在本文件的上级目录下构建映像</p>
+<p>restart: unless-stopped # 重启策略</p>
+<p>ports: - "6000:5000" # 将容器上的暴露端口`5000`映射到主机上的端口 `6000`</p>
+<p>volumes: </p>
+<p>- ../src:/opt/src # 通过volums动态挂载，容器和物理host共享数据卷</p>
+<p>redis: # redis服务</p>
+<p>image: redis:3.0.7 # 映像名</p>
+<p># volumes 路径设置</p>
+<p>volumes: # 只需指定一个路径，让引擎创建一个卷</p>
+<p>- /var/lib/mysql # 指定绝对路径映射</p>
+<p>- /opt/data:/var/lib/mysql # 相对于当前compose文件的相对路径</p>
+<p>- ./cache:/tmp/cache # 用户家目录相对路径</p>
+<p>- ~/configs:/etc/configs/:ro # 命名卷</p>
+<p>- datavolume:/var/lib/mysql</p>
+<p>如果要跨多个服务并重用挂载卷，请在顶级volumes关键字中命名挂在卷。不提倡重用挂载卷。</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2025-01-11 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(597) <a href="/b7/1044.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-1043" class="post_list">
 	  <a href="/b7/1043.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">WPS OFFICE免登录注册码</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b7/1043.html">新版WPS OFFICE 需要登陆后才可以使用基础功能，用以下方法解除这个限制。<br>
@@ -365,7 +395,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-10 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(555) <a href="/b7/1043.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(578) <a href="/b7/1043.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -380,7 +410,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-08 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(580) <a href="/b6/1042.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(603) <a href="/b6/1042.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -393,7 +423,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-07 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(581) <a href="/b6/1041.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(597) <a href="/b6/1041.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -405,7 +435,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(768) <a href="/b0/1040.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(889) <a href="/b0/1040.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -416,7 +446,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(125) <a href="/b6/1073.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(141) <a href="/b6/1073.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -427,7 +457,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(667) <a href="/b0/1039.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(725) <a href="/b0/1039.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -438,7 +468,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(942) <a href="/b0/1038.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(992) <a href="/b0/1038.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -449,7 +479,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(954) <a href="/b0/1037.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1058) <a href="/b0/1037.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -460,22 +490,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(759) <a href="/b0/1036.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1035" class="post_list">
-	  <a href="/b0/1035.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州各镇的村庄简史及姓氏来源（南兴篇）</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/1035.html"><p>南兴镇始建于嘉庆二十五年（1820）。南兴取意为“置古雷州城之南，众望其兴也”。民国时期称为南兴区公所解放初期，属海康县第二区。1957年，分南兴、东林两乡。1958年，属雷南县先锋公社。1961年，分出属南兴区；后又析出成立南兴公社。1984年，改称为南兴区。1987年4月，改称为南兴镇。</p><p>南兴镇下辖 1 个社区和 33 个村委会，社区为南兴社区，村委会包括东仓、东吴、东岳、东市、东村、东林、南渡、善排、塘头、夏初、外园、宋村、山内、山尾、平兰、新村、梅田、步月、深田、清坭、港东、港西、田东、芝园、花桥、荇州、草洋、袁新、高朗、高田、麻参、麻廉等。</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-01-06 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(677) <a href="/b0/1035.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(821) <a href="/b0/1036.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1021 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-5.html'>&lt;</a><a href='index-4.html'>4</a><a href='index-5.html'>5</a><span class="current">6</span><a href='index-7.html'>7</a><a href='index-8.html'>8</a><a href='index-7.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
+		<span class="info"> 共计：1022 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-5.html'>&lt;</a><a href='index-4.html'>4</a><a href='index-5.html'>5</a><span class="current">6</span><a href='index-7.html'>7</a><a href='index-8.html'>8</a><a href='index-7.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
