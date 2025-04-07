@@ -220,9 +220,9 @@ var items = document.querySelectorAll('#title a');
 var currentUrl = window.location.href;
 
 if (currentUrl.includes('linji1.github.io') || currentUrl.includes('linji.org')) {
-    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+    items[0].innerHTML = '<a href="https://linji.cn/" target="_blank">老林笔记</a>';
 } else if (currentUrl.includes('linji.cn')) {
-    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+    items[0].innerHTML = '<a href="https://linji1.github.io/blog/" target="_blank">老林笔记</a>';
 }
 </script>
 <!-- activity-power-mode 打字效果 -->
@@ -355,6 +355,34 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-920" class="post_list">
+	  <a href="/b7/920.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">php中警告提示A session had already been started – ignoring session_start() 解决方法</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/920.html"><p>登录代码用到了session_start()方法，但是直接这样是不正确的！</p><p>php会爆出警告提示：</p><p>Notice:&nbsp;A&nbsp;session&nbsp;had&nbsp;already&nbsp;been&nbsp;started&nbsp;-&nbsp;ignoring&nbsp;session_start()&nbsp;in&nbsp;***\sina.php&nbsp;on&nbsp;line&nbsp;2</p><p>错误提示：A&nbsp;session&nbsp;had&nbsp;already&nbsp;been&nbsp;started&nbsp;-&nbsp;ignoring&nbsp;session_start()</p><p>翻译过来说的是已经存在一个session被打开了&nbsp;--&nbsp;忽略sessioon_start();</p><p>废话不多说，解决问题是关键，切入解决方法：</p><p>解决办法1：&nbsp;在php.ini&nbsp;中&nbsp;修改成</p><p>session.auto_start&nbsp;=&nbsp;0&nbsp;&nbsp;//&nbsp;0是关闭&nbsp;&nbsp;1是打开
+</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-03-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1009) <a href="/b7/920.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-919" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/919.html"><p>【通知】各镇中心小学：为规范中心小学校本部中层干部及面上小学正副校长及中层干部管理，现将有关事项通知如下：</p>
+<p>1. 中心小学管辖的所有中层以上干部提拔任用、交流解聘必须实行报备、批复制度；</p>
+<p>2. 2020年以前中心小学已任用的中层以上干部，未经我局人事股审核批复的，请于3月26日前向我局人事股提交有关干部任免请示，经审核后一次过批复，由中心小学发文聘任；2020年及以后中心小学已任用的中层以上干部，必须按《雷州市教育系统股级干部选拔任用管理办法（试行）》（雷教党组〔2023〕101号）履行推荐、考察等程序，公示无异议后，向我局人事股提交有关干部任免请示，经审核批复后，由中心小学发文聘任；</p>
+<p>3.交流支教（借调）教师及职工身份的教师不得提拔任用为中层干部或面上小学正副校长；</p>
+<p>4.已撤并的农村小学麻雀学校校长必须全部列入报备解聘。</p>
+<p>5.新提拔任用的干部必须按《雷州市学校干部提拔任用材料目录》备案有关材料，我局将定期检查并作为校长岗位考核股室定性打分依据。【人事股2024.3.22】</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-03-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1056) <a href="/b6/919.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-918" class="post_list">
 	  <a href="/b7/918.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Sqlite 基本使用</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b7/918.html">这些是一些基本的查询示例，您可以根据您的需要执行更复杂的查询，并根据您的应用程序逻辑处理查询结果。记住使用 $db->query() 方法来执行 SELECT 查询，并使用 $db->exec() 方法来执行 INSERT、UPDATE 和 DELETE 查询。</div>	  
@@ -362,7 +390,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-21 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(918) <a href="/b7/918.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(925) <a href="/b7/918.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -379,7 +407,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-16 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1713) <a href="/b7/916.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1719) <a href="/b7/916.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -390,7 +418,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-12 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(761) <a href="/b8/915.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(765) <a href="/b8/915.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -401,7 +429,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-07 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(685) <a href="/b8/912.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(688) <a href="/b8/912.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -415,7 +443,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-03 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(727) <a href="/b6/910.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(731) <a href="/b6/910.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -429,7 +457,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-03 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(681) <a href="/b6/909.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(684) <a href="/b6/909.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -440,7 +468,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-01 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(698) <a href="/b6/908.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(701) <a href="/b6/908.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -451,38 +479,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-03-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(776) <a href="/b8/907.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-904" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/904.html"><p>【通知】各中学，中心小学，市直校（园）：根据昨天（2月28日）湛江市教育局召开的教师培训工作会议精神，现将近段有关培训工作通知如下：</p>
- <p>一、湛江市教师发展中心今年打算不举办初中及高中职务培训，将考虑以其他方式对教师所需学时进行兜底，寒假研修和暑期研修的16学时作为其中必备专业学时。各校需督促所有教师在国家智慧教育平台完成2024年寒假研修学习任务。研修截止时间为2024年3月31日，逾期后果自负（注：寒假研修和暑期研修是教育部主导下的教师常态化研修活动）。</p>
- <p>二、2023年公需科目学习截止时间为2024年4月30日，但截至今天上午还有约1700名教师未完成学习，各校要提醒未完成学习任务的教师尽快登录广东省教师继续教育信息管理平台完成学习，以免影响教师资格证“五年一审”。</p>
- <p>三、未完成2022年初中教师全员轮训任务（9天集中面授）的学校及未完成2023年小学教师全员轮训任务（小学数学、英语教师12天集中面授）的学校请尽快安排时间完成（在初中教师全员轮训资料县级初审中出现天数不足的一定要真真正正开展培训，补足天数。特别提醒，此项工作绝不允许弄虚作假，需按通知中的课程做足天数。弄虚作假者，后果自负）。在组织实施培训时，各校务必按照规范流程开展，要成立授课专家遴选小组，加强培训专家的选聘、教材（资料）与课件的审核，审核后需将拟选专家的材料（含专家介绍及职称复印件）、上课教材（资料）与课件通过相关链接送到雷州市教师发展中心，由中心再次审查把关。</p>
- <p>四、已完成2022年及2023年轮训集中面授的学校赶于下周将佐证资料纸质版（加盖学校公章）送到雷州市教育局七楼教师发展2室，电子版打包同时发送至邮箱：lzjys8852306@163.com。</p>
- <p>五、2024年雷州市教师全员轮训工作具体安排将在湛江市相关通知下达后另行通知。【雷州市教师发展中心2024.02.29】@所有人</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2024-02-29 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(690) <a href="/b6/904.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-903" class="post_list">
-	  <a href="/b6/903.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州市杨家镇中心小学分片管理安排</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/903.html">【温馨提示】各小学：分片管理安排重新调整后已发在微信群上面，下周管片负责人下乡检查开学工作，检查内容：学校安全隐患情况，校园及周边环境卫生情况，师生返校情况等内容，具体检查时间管片负责人到时再通知。检查完后检查人员做好反馈汇报工作。［杨家镇中心小学管理组2024年2月23日上午］</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2024-02-23 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(752) <a href="/b6/903.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(780) <a href="/b8/907.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1022 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-17.html'>&lt;</a><a href='index-16.html'>16</a><a href='index-17.html'>17</a><span class="current">18</span><a href='index-19.html'>19</a><a href='index-20.html'>20</a><a href='index-19.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
+		<span class="info"> 共计：1024 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-17.html'>&lt;</a><a href='index-16.html'>16</a><a href='index-17.html'>17</a><span class="current">18</span><a href='index-19.html'>19</a><a href='index-20.html'>20</a><a href='index-19.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">

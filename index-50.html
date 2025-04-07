@@ -220,9 +220,9 @@ var items = document.querySelectorAll('#title a');
 var currentUrl = window.location.href;
 
 if (currentUrl.includes('linji1.github.io') || currentUrl.includes('linji.org')) {
-    items[0].innerHTML = '<a href="https://linji.cn/">老林笔记</a>';
+    items[0].innerHTML = '<a href="https://linji.cn/" target="_blank">老林笔记</a>';
 } else if (currentUrl.includes('linji.cn')) {
-    items[0].innerHTML = '<a href="https://linji1.github.io/">老林笔记</a>';
+    items[0].innerHTML = '<a href="https://linji1.github.io/blog/" target="_blank">老林笔记</a>';
 }
 </script>
 <!-- activity-power-mode 打字效果 -->
@@ -355,6 +355,37 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-573" class="post_list">
+	  <a href="/b7/573.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">三元运算符</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/573.html"><p>三元运算符：
+</p><p>(条件) ? (值1) :(值2);
+</p><p>解释：如果条件成立（为真），则执行冒号前边的“值1”，否则执行冒号后面的“值2”。
+</p><p>isset（）函数是检测变量是否设置，$_GET['id']是通过get方法传过来的值。</p><p>这句话的意思就是：如果$_GET['id']已经被设置，即已经有值了，则$id=$_GET['id'];
+</p><p>如果$_GET['id']没有被设置，则$id = '';
+</p><p>用代码翻译就是：</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="php hljs" codemark="1"><span class="hljs-keyword">if</span>( <span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">'id'</span>]) ){
+<span class="hljs-variable">$id</span> = <span class="hljs-variable">$_GET</span>[<span class="hljs-string">'id'</span>];
+}<span class="hljs-keyword">else</span>{
+<span class="hljs-variable">$id</span> = <span class="hljs-string">''</span>;
+}</code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-04-05 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3720) <a href="/b7/573.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-572" class="post_list">
+	  <a href="/b7/572.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">用layui设计了管理后台</h2></a>      <div class="excerpt">
+	  <div class="thumbnail"><a href="/b7/572.html"><img src="/assets3/file/2020/04/s_221501_912314674.png" /></a></div>	  <div class="textPost" data-url="/b7/572.html">用layui设计了管理后台，用来管理教师资料，学生资料，代工业务，发票管理，帐簿管理，可以做报名平台，自动统计。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-04-05 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3703) <a href="/b7/572.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-570" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b6/570.html">【通知】各小学、幼儿园：根据校历规定，结合教育局的通知精神，清明节放假调休时间为：4月4日至6日，共3天。放假前各校（园）要做好森林防火、交通、防溺水等安全教育工作，同时要做好值班安排。[管理组2020年4月2日下午发送]</div>	  
@@ -362,7 +393,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3645) <a href="/b6/570.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3650) <a href="/b6/570.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -373,7 +404,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3348) <a href="/b6/569.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3353) <a href="/b6/569.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -384,7 +415,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-04-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3361) <a href="/b6/568.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3365) <a href="/b6/568.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -396,7 +427,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-03-23 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3511) <a href="/b6/567.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3516) <a href="/b6/567.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -407,7 +438,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-03-23 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3081) <a href="/b6/566.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3085) <a href="/b6/566.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -418,7 +449,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-03-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3295) <a href="/b7/565.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3298) <a href="/b7/565.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -429,7 +460,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-03-03 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4255) <a href="/b1/564.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4262) <a href="/b1/564.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -440,34 +471,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-03-02 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3379) <a href="/b0/563.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-562" class="post_list">
-	        <div class="excerpt">
-	  <div class="thumbnail"><a href="/b8/562.html"><img src="/assets3/file/2020/03/s_184955_834091465.jpg" /></a></div>	  <div class="textPost" data-url="/b8/562.html">#运课本# 正在运送课本回校（林仁贵、林继、黄丽、陈娇凤），按班级、学生分拣好课本。量体温，签名，领课本。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-03-02 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3652) <a href="/b8/562.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-559" class="post_list">
-	  <a href="/b7/559.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">无名轻博客修改笔记</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/559.html">一、下载模板样式
-<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-tag"><<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"clear: both; border-left: 0pt solid rgb(214, 192, 148); width: 100%;"</span>></span><span class="hljs-tag"><<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background-color: rgb(230, 238, 247); border-bottom: 1px dashed rgb(64, 138, 183) ! important; color: rgb(63, 103, 165); font-weight: bold; padding: 5px;"</span>></span><span class="hljs-tag"><<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fas fa-download"</span>></span><span class="hljs-tag"></<span class="hljs-title">i</span>></span> 下载文件 <span class="hljs-tag"></<span class="hljs-title">div</span>></span><span class="hljs-tag"><<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"border-color: -moz-use-text-color rgb(230, 238, 247) rgb(230, 238, 247); border-style: none solid solid; border-width: 0pt 1px 1px; color: #E6EEF7; padding: 10px;"</span>></span><span class="hljs-tag"><<span class="hljs-title">a</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/assets/file/2020/02/lin1.doc"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">""</span>></span>林继-自我总结.doc<span class="hljs-tag"></<span class="hljs-title">a</span>></span><span class="hljs-tag"></<span class="hljs-title">div</span>></span><span class="hljs-tag"></<span class="hljs-title">div</span>></span></code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-02-10 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(8125) <a href="/b7/559.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3385) <a href="/b0/563.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1022 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-49.html'>&lt;</a><a href='index-48.html'>48</a><a href='index-49.html'>49</a><span class="current">50</span><a href='index-51.html'>51</a><a href='index-52.html'>52</a><a href='index-51.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
+		<span class="info"> 共计：1024 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-49.html'>&lt;</a><a href='index-48.html'>48</a><a href='index-49.html'>49</a><span class="current">50</span><a href='index-51.html'>51</a><a href='index-52.html'>52</a><a href='index-51.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
