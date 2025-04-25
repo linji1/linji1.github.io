@@ -355,6 +355,51 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-686" class="post_list">
+	  <a href="/b7/686.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">如何给 Win11 开启传统右键菜单?（附注册表导入）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/686.html">Windows 11新的右键菜单虽然简单，但是感觉没有传统的右键菜单流畅，学习和适应可能需要时间。不需要在Win11上点击“show more options”直接调出传统的右键菜单。<br>
+
+实现方法<br>
+1. Win+R 运行，输入 Regedit，打开注册表编辑器。<br>
+
+2. 定位到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FeatureManagement\Overrides\4 右击创建新的项，命名为 586118283<br>
+
+3. 在创建的新项右侧窗格创建 5 个 DWORD 为：EnabledState、EnabledStateOptions、Variant、VariantPayload、VariantPayloadKind。<br>
+
+4. 完成，重启电脑即可直接在 Win11 中呼出传统右键菜单。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-07-06 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2953) <a href="/b7/686.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-685" class="post_list">
+	  <a href="/b7/685.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">修改注册表绕过TPM 2.0限制 4GB内存也能装Windows 11</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/685.html">微软发布的Windows 11系统在硬件要求上提高了门槛，不仅需要4GB以上内存，还要TPM 2.0及安全启动两个功能，很多人卡在升级资格上都是因为TPM 2.0。不过即便没有这些功能及硬件，Windows 11修改注册表的话也能绕过这些限制。<br>
+
+Betanews网站上给出了这样的一套方法，其实国内之前也有人用过类似手段了，修改注册表可以绕过很多微软官方的限制，只不过对普通人来说操作有点麻烦。<br>
+
+1、 按下Win+R打开运行框，输入regedit打开注册表界面。<br>
+
+2、 找到HKEY_LOCAL_MACHINE  SYSTEM  Setup，在该项目新建一个项——LabConfig。<br>
+
+3、 在LabConfig中，创建一个名为BypassTPMCheck的DWORD（32 位）值，数值设定为1。<br>
+
+4、 在LabConfig中，再创建一个名为BypassRAMCheck的DWORD（32 位）值，数值设定为1.<br>
+
+5、 接着创建一个名为BypassSecureBootCheck的DWORD（32 位）值，数值设定为1。<br>
+
+6、退出注册表编辑器。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-07-06 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2818) <a href="/b7/685.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-684" class="post_list">
 	  <a href="/b3/684.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">（五年级数学）2017~2018学年度第二学期期末教学效果检测</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b3/684.html"><div style="height: 412px;overflow: hidden;"><center><img src="/assets2/file/2021/07/2021070409.webp"   width="100%"    height="auto"></center></div></div>	  
@@ -362,7 +407,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-07-06 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2466) <a href="/b3/684.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2521) <a href="/b3/684.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -373,7 +418,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-07-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(16732) <a href="/b3/683.html#comments"><i class="iconfont icon-com"></i> 评论(6)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(17118) <a href="/b3/683.html#comments"><i class="iconfont icon-com"></i> 评论(6)</a> 
 	 
 	</p></div></div> 
 	 
@@ -388,7 +433,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-07-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2722) <a href="/b3/682.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2773) <a href="/b3/682.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -399,7 +444,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-07-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2297) <a href="/b3/681.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2334) <a href="/b3/681.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -410,7 +455,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-07-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2342) <a href="/b0/680.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2386) <a href="/b0/680.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -431,7 +476,7 @@ HKEY_CURRENT_USER\Software\Microsoft\ Windows\CurrentVersion\Explorer\Advanced\T
 	  <div class="meta">
 	  <p class="time">2021-07-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3913) <a href="/b7/679.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3956) <a href="/b7/679.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -442,7 +487,7 @@ HKEY_CURRENT_USER\Software\Microsoft\ Windows\CurrentVersion\Explorer\Advanced\T
 	  <div class="meta">
 	  <p class="time">2021-07-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2301) <a href="/b3/678.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2332) <a href="/b3/678.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -453,34 +498,11 @@ HKEY_CURRENT_USER\Software\Microsoft\ Windows\CurrentVersion\Explorer\Advanced\T
 	  <div class="meta">
 	  <p class="time">2021-07-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2465) <a href="/b0/677.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-676" class="post_list">
-	  <a href="/b4/676.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2021-2022学年校历</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b4/676.html"><img src="/assets2/file/2021/07/2021070101.png" style="max-width:100%;"></a></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2021-07-01 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2607) <a href="/b4/676.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-675" class="post_list">
-	  <a href="/b0/675.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">中国共产党党内统计公报</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/675.html">截至2021年6月5日，中国共产党党员总数为9514.8万名，比2019年底净增323.4万名，增幅为3.5%。<br>
-中国共产党现有基层组织486.4万个，比2019年底净增18.2万个，增幅为3.9%。其中基层党委27.3万个，总支部31.4万个，支部427.7万个。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2021-07-01 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2293) <a href="/b0/675.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2509) <a href="/b0/677.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1029 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-39.html'>&lt;</a><a href='index-38.html'>38</a><a href='index-39.html'>39</a><span class="current">40</span><a href='index-41.html'>41</a><a href='index-42.html'>42</a><a href='index-41.html'>&gt;</a><a href='index-103.html'>尾页</a>	</div>
+		<span class="info"> 共计：1031 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-39.html'>&lt;</a><a href='index-38.html'>38</a><a href='index-39.html'>39</a><span class="current">40</span><a href='index-41.html'>41</a><a href='index-42.html'>42</a><a href='index-41.html'>&gt;</a><a href='index-104.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -579,11 +601,11 @@ HKEY_CURRENT_USER\Software\Microsoft\ Windows\CurrentVersion\Explorer\Advanced\T
 	       <div class="widget">
         <h3>信用卡</h3>     
 				  <ul><ul class="topic">
-<li>招商全币 免年费√ | 招商金卡 6次√</i>
-<li>平安银行 免年费√ | 招商白金 3次√</i>
-<li>建设银行 免年费√ | 农业银行 5次√</i>
-<li>邮政银行 免年费√ | 工商银行 5次√</i>
-<li>中国银行 免年费√ | 广发银行 12次</i>
+<li>招商全币 免年费 | 招商金卡 6次√</i>
+<li>平安银行 免年费 | 招商白金 3次√</i>
+<li>建设银行 免年费 | 农业银行 5次√</i>
+<li>邮政银行 免年费 | 工商银行 5次√</i>
+<li>中国银行 免年费 | 广发银行 1次√</i>
 </ul></ul>
 		      </div>	  
 	       <div class="widget">
