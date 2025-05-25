@@ -355,6 +355,138 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-640" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/640.html">【通知】各小学：一、根据雷州市教育局党组织的要求及我镇小学实际情况，现定于2021年3月9日上午9：00在管理组一楼会议室召开2020年党总支部组织生活和民主评议党员会议，现将会议有关要求通知如下：1、各校要按《杨家镇小学退休教师管理安排表》中各校对应的姓名通知退休党员依时参加；2、各校要通知党员佩戴党徽和口罩；3、各校要通知党员带来2021年第一季度党费缴交；4、各校要做好与会党员的课程安排；5、注意途中往返安全。二、今天是三八妇女节，各校按校历规定执行（妇女放假半天）；三、各校带来一至六年级学生人数（含科任教师）填表分配单元测验试卷，同时带来学校公章填写《义务教育阶段小学学生公用经费人数汇总表》，带来幼儿人数填报《2021年春季雷州市学前教育公办及普惠性民办幼儿园学生人数汇总表》。［杨家镇中心管理组2021年3月8日上午发送］</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-03-08 通过手机 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2758) <a href="/b6/640.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-639" class="post_list">
+	  <a href="/b0/639.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">转学办理流程</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/639.html">根据广东省学籍管理实施细则有关规定，中小学生在【市内】转学时，书面转学流程为：转入学校盖章→转入学校主管教育局盖章。学籍系统转学流程为：转入学校核办→转入学校主管教育局核办→转出学校核办→转出学校主管教育局核办。普通高中学生从市外、省外转入本市的，书面转学流程为：转入学校盖章→转入学校主管教育局盖章→市教育局盖章。<br>
+特别提醒：中小学生在【市内】转学，除转入市直属学校需市教育局盖章外，转入其他学校均不需要市教育局盖章； 普通高中学生从市外、省外转入我市的，才需市教育局盖章。请各地、各学校正确指引学生家长办理市内转学业务，避免家长来回多次跑动。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-02-28 通过手机 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3309) <a href="/b0/639.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-638" class="post_list">
+	  <a href="/b7/638.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">读取当前设备wifi密码（仅win10测试）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/638.html">复制代码，粘贴到记事本里<br>
+注！最好不要用第三方编辑器。。。。<br>
+win10默认的保存语言是utf-8，bat只支持ANSI，中文编码错误保存会乱码<br>
+
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">@echo off
+color <span class="hljs-number">2</span>f
+mode con: cols=<span class="hljs-number">40</span> lines=<span class="hljs-number">15</span>
+title WiFi密码查询
+echo 正在查询结果
+setlocal enabledelayedexpansion
+<span class="hljs-keyword">for</span> /f <span class="hljs-string">"tokens=2* delims=:"</span> %%i <span class="hljs-keyword">in</span> (<span class="hljs-string">'netsh wlan show profiles'</span>) <span class="hljs-keyword">do</span> (
+    set str=%%i
+    <span class="hljs-keyword">for</span> /f <span class="hljs-string">"tokens=3* delims= "</span> %%d <span class="hljs-keyword">in</span> (<span class="hljs-string">'netsh wlan show profiles key^=clear name^="!str:~1!"^| findstr "关键内容"'</span>) <span class="hljs-keyword">do</span> (
+        echo <span class="hljs-string">"!str:~1!"</span>密码为：【%%d】
+        echo <span class="hljs-string">"!str:~1!"</span>密码为：【%%d】&gt;&gt;WiFi.txt
+    )
+)
+echo 保存在脚本所在目录的WiFi.txt文件中
+echo 任意键退出查询
+pause&gt;nul</code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-24 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3317) <a href="/b7/638.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-637" class="post_list">
+	  <a href="/b7/637.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">永别了，电脑弹窗广告！</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/637.html">相信很多人都有这种情况，打开电脑，电脑上全部各种广告弹窗，或者在办公、追剧的时候，电脑突然就弹出了一条，是不是很烦人，今天教大家几招不用借助软件，手撕弹窗的方法。
+<h2>方法一：</h2>
+<p>第一种方法，可以对付部分突然的弹窗，开机的弹窗也可以对付。</p><p>1、在电脑弹出广告的时候，先不要关闭，按下组合键【Ctrl+Shift+Esc】进入【任务管理器】，如果组合键没反应的话，还可以按【Ctrl+Alt+Delete】，然后选择启动任务管理器。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-18 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2990) <a href="/b7/637.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-636" class="post_list">
+	  <a href="/b3/636.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2020~2021学年度六年级上册期末教学质量检测卷</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/636.html"><div style="height: 412px;overflow: hidden;"><center><img src="/assets2/file/2021/01/2021011401.webp"   width="100%"    height="auto"></center></div></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-14 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3572) <a href="/b3/636.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-635" class="post_list">
+	  <a href="/b0/635.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">小学英语1-6年级必备基础语法要点</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/635.html">一般来说，小学英语的学习主要涉及一些比较基础的英语知识，掌握好这些基础知识，就能为以后英语的学习打下良好的基础。<br>
+
+针对小学英语的特点总结出应该掌握的基本语法，具体包括以下内容：<br>
+
+动词、名词和形容词在英语里与汉语里有类似，也有区别，不太容易区分，如不能一眼看出，可用如下方法：<br>
+
+在一个词前面加量词（不定冠词），“一（个、张等）”，如说得通，一般认为是名词;如果说不通，再把“很”加在词的前面去判断，说得通一般就是形容词;都说不通就是动词。(目前我们学过的，以后可能不同)(另外一些很明显的，如人称代词、数词、情态动词等一下就可以知道)</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-07 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2898) <a href="/b0/635.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-634" class="post_list">
+	  <a href="/b0/634.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">一、二年级要狠抓！抓什么？看完你就明白了</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/634.html">教育界里流传一句非常中肯的话：一年级时狠抓孩子1个月，比六年级盯一整年更有效！<br>
+
+万事开头难，孩子的教育更是如此。所谓“赢在起跑线上”，就应该从一二年级抓起。<br>
+
+这里所说的“狠抓”，不是一直盯着孩子，不是天天跟班主任联系，而是抓习惯，抓态度，抓行为，抓效率……<br>
+
+俗话说：千里之行，始于足下。提前给孩子铺设一条更好走的路，需要从小抓起，也需要家长全力配合。<br>
+
+一二年级是孩子学习的知识量最少、压力最小的时候，这时候狠抓孩子以下5个方面，往往有事半功倍的效果。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-07 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3449) <a href="/b0/634.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-633" class="post_list">
+	  <a href="/b3/633.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">小学数学易错题集锦</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/633.html">1、一个三角形的底角都是45度，它的顶角是（    ）度，这个三角形叫做（    ）三角形。<br>
+
+2、有一根20厘米长的铁丝，用它围成一个对边都是4厘米的四边形，这个四边形可能是（    ）。<br>
+
+3、一项工程，甲乙两队合作20天完成，已知甲乙两队的工作效率之比为4：5，甲队单独完成这项工程需要（    ）天。<br>
+
+4、一座钟的时针长3厘米，它的尖端在一昼夜里走过的路程是（    ）厘米。<br>
+
+5、在一块长10分米，宽6分米的长方形铁板上，最多能截取（    ）个直径是2分米的圆形铁板。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2021-01-07 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3314) <a href="/b3/633.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-632" class="post_list">
 	  <a href="/b3/632.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">详解小学8种常考修辞手法</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b3/632.html"><p>在小学语文学习与考试中，会经常出现一些使用修辞手法的句子，然后让孩子说说这些修辞在句中的作用，对这类题目，很多孩子都感到难以应对。下面，我们就一起来看看常见修辞手法的特点及其在句子表达中的作用。</p><p><b>一、什么是修辞手法？</b></p><p>修辞手法，就是通过修饰、调整语句，运用特定的表达形式以提高语言表达作用的方式或方法，使语言表达得准确、鲜明而生动有力。</p><p>▣  <b>语文中的修辞手法：</b></p><p>比喻、拟人、夸张、排比、对偶、借代、反问、设问、对比、反复、双关、引用、反语、联想、通感、顶真、互文、回环、移情、象征、寄寓等。</p><p>▣  <b>常用的修辞手法：</b></p><p>比喻、拟人、夸张、排比、对偶、借代、反问、设问。</p></div>	  
@@ -362,7 +494,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-01-07 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2987) <a href="/b3/632.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3078) <a href="/b3/632.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -373,151 +505,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2021-01-04 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3697) <a href="/b1/631.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-630" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/630.html">【通知】各小学：根据杨家镇党委要求，现决定2020年12月25日（星期五）上午9：00在杨家镇中心管理组一楼会议室召开全体党员会议，成立中共雷州市杨家镇中心小学总支部委员会，选举总支部委员。本次会议要求全体党员参加，党员名单详见微信上面的《（2020.12）雷州市杨家镇中心小学党支部党员花名册》，希各校及时通知党员依时参加（在职党员不准缺席，退休党员按《2020年12月杨家镇小学退休教师管理安排表》的编排由相关学校通知，各学校要逐一通知到位，动员退休党员一定要参加会议），勿误。［杨家镇中心管理组2020年12月23日下午送发］</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-12-23 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3105) <a href="/b6/630.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-629" class="post_list">
-	  <a href="/b7/629.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让php强制使用https协议（http自动跳转到https）</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/629.html">其实很简单，在你的程序引用的全局脚本加上
-<br>
-<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="php hljs" codemark="1"><span class="hljs-keyword">if</span>(<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"SERVER_PORT"</span>] !== <span class="hljs-string">'443'</span>) {
-  header(<span class="hljs-string">'location:https://'</span>.<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'SERVER_NAME'</span>].<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'REQUEST_URI'</span>]);
-  <span class="hljs-keyword">exit</span>;
-}</code></pre>
-应该是通用的<br>
-如果你没有引用的全局脚本，建议你写一个（更方便你的开发），本人建议有能力的用上框架，是不错的<br>
-有的人会问我怎么不使用$_SERVER["HTTPS"]变量，因为这个是局限性的，fastcgi等是无用的（例如nginx），而$_SERVER["SERVER_PORT"]是一定存在的，无论是apache还是nginx等等都可以使用</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-12-22 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2953) <a href="/b7/629.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-628" class="post_list">
-	  <a href="/b6/628.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">雷州市“新时代教师职业行为准则及其违规处理办法”测试题（2020.12）</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/628.html">【通知】各学校：雷州市“新时代教师职业行为准则及其违规处理办法”统一测试题（电子版）已发至各学校德育邮箱，请各学校于12月21日晚上前组织所有教师完成测试（答案周一晚上完成测试后提供），并做好教师测试成绩登记存档工作。【雷州市教育局德育股】</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-12-21 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3136) <a href="/b6/628.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-627" class="post_list">
-	  <a href="/b7/627.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">PHP数据类型转换(字符转数字,数字转字符)</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/627.html"><p>原文链接：<a href="http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html" style="">http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html</a></p><p>PHP的数据类型转换属于强制转换，允许转换的PHP数据类型有：</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">（int）、（integer）：转换成整形
-（float）、（double）、（real）：转换成浮点型
-（string）：转换成字符串
-（bool）、（boolean）：转换成布尔类型
-（array）：转换成数组
-（object）：转换成对象</code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-12-20 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2898) <a href="/b7/627.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-626" class="post_list">
-	  <a href="/b7/626.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑使用技巧</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/626.html">win10 家庭中文版打开本地组策略编辑器：解决方案<br><br>
-
-　　新建一个txt文件-->将以下内容进行拷贝<br><br>
-
-pushd "%~dp0"<br>
-dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt<br>
-dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt<br>
-for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
-　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；<br><br>
-
-　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； <br><br>
-
-　　将生成的bat文件和List.txt文件进行删除即可。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-10-22 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(7636) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-625" class="post_list">
-	  <a href="/b7/625.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让指定的div层在网页打开几秒后自动隐藏关闭</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/625.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">如果是jquery
-
-&lt;script&gt;
-
-setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{$(<span class="hljs-string">"#这里放id"</span>).hide()},<span class="hljs-number">1000</span>)<span class="hljs-comment">//1000是1秒</span>
-
-&lt;<span class="hljs-regexp">/script&gt;
-
-如果没有jquery
-
-&lt;script&gt;
-
-setTimeout(function(){document.getElementById("这里放id").style.display = "none"},1000)/</span><span class="hljs-regexp">/id是你要隐藏zhi的div的id 1000是1秒
-
-&lt;/</span>script&gt;
-
-把代码放在网页&lt;<span class="hljs-regexp">/body&gt;前面</span></code></pre></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-10-20 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3995) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-624" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/624.html">1.严格按照学校入校、离校的错锋时间接送孩子，确保不造成拥堵。<br>
-一.二年级<br>
-  上午7：30一11：00<br>
-  下午2：30一4：  25<br>
-三.四.五年级<br>
-上午7：20一11：15<br>
-下午2：20一4：35<br>
-六年级<br>
-上午7：20一11：15<br>
-下午2：20一5：30<br>
-      再三强调，学校大门上午开门时间为7：20分，下午开门时间为2：20分。学生来校时间不能过早，在家校管理盲区存在很大的安全隐患，务必引起重视。<br>
-      让我们共同呵护好每一个孩子！</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-10-19 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3679) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-623" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/623.html">【通知】各小学：1、现定于10月20日（星期二）上午9：00在管理组召开党员会议及校长会议（参加会议党员要在8：45前到达并签到）。先召开党员会议，然后校长留下来再开会（几个非党员校长要在上午10：00前到管理组等待），请各校通知党员（含退休党员）依时参加；2、纪腾龙同志已发《“湛江发布”微信公众号、“视听湛江”APP……》等几个文件在微信上面，请各校下载并按要求执行；3、上级部门于10月20日至23日到我镇检查人居环境卫生整治工作，请各校每天要搞好校园及周边环境卫生，迎接检查，并拍照搞卫生现场图片发到微信收发群。［杨家镇中心管理组2020年10月19日上午发送］</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-10-19 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3171) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3793) <a href="/b1/631.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1031 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-44.html'>&lt;</a><a href='index-43.html'>43</a><a href='index-44.html'>44</a><span class="current">45</span><a href='index-46.html'>46</a><a href='index-47.html'>47</a><a href='index-46.html'>&gt;</a><a href='index-104.html'>尾页</a>	</div>
+		<span class="info"> 共计：1039 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-44.html'>&lt;</a><a href='index-43.html'>43</a><a href='index-44.html'>44</a><span class="current">45</span><a href='index-46.html'>46</a><a href='index-47.html'>47</a><a href='index-46.html'>&gt;</a><a href='index-104.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -556,7 +548,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 
 <a target="_blank" href="https://v3.dconline.net.cn" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
-<span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
+<span class="unget" title="">6</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
 </a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://v3.dconline.net.cn" title="">专业课</a></p>
 
 </div>
@@ -565,8 +557,8 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 
 <a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
-<span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/30</strong>
-</a><p style="font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;font-weight: 100;" title=""><a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title="">公需课</a></p>
+<span class="unget" title="">30</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/30</strong>
+</a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title="">公需课</a></p>
 
 </div>
 
@@ -575,7 +567,7 @@ setTimeout(function(){document.getElementById("这里放id").style.display = "no
 <a target="_blank" href="https://v3.lt-edu.net" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
 <span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/18</strong>
-</a><p style="font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;font-weight: 100;" title=""><a target="_blank" href="https://v3.lt-edu.net" title="">选修课</a></p>
+</a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://v3.lt-edu.net" title="">选修课</a></p>
 
 </div>
 </div>
