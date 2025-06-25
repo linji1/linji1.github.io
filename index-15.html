@@ -355,6 +355,118 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-985" class="post_list">
+	        <div class="excerpt">
+	  <div class="thumbnail"><a href="/b1/985.html"><img src="/assets/file/2024/11/s_081052_954840813.png" /></a></div>	  <div class="textPost" data-url="/b1/985.html">第 28 张证书：林继老师：您从事乡村教育工作满二十年，为我省乡村教育发展做出积极贡献，特颁此证。证书编号：系列号：0024761。（广东省教育厅 二0二三年八月） 
+<span style="display: true;text-align: center;margin-bottom: 0px;font-size: 18px;line-height: 1.8em;" title="2001-09-01">执教时长：</span><span id="txClock" style="display: true;text-align: center;margin-bottom: 0px;font-size: 18px;line-height: 1.8em;color: red;" title="2001-09-01"></span>
+    <script language="javascript">
+        // 判断是否为闰年的函数
+        function isLeapYear(year) {
+            return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
+        }
+
+        // 计算两个日期之间时间差，并精确计算月份差的函数
+        function calculateTimeDifference(startDate, endDate) {
+            const diffInMilliseconds = endDate - startDate;
+
+            // 先计算完整的年份差
+            const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+            // 扣除已计算的年份对应的毫秒数，得到剩余毫秒数用于后续计算
+            let remainingMilliseconds = diffInMilliseconds % (1000 * 60 * 60 * 24 * 365);
+
+            // 计算月份差，通过逐月递减剩余毫秒数并统计月份
+            let months = 0;
+            const monthsInYear = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            const startYear = startDate.getFullYear();
+            for (let i = 0; i < 12; i++) {
+                const daysInMonth = i === 1 && isLeapYear(startYear + years)? 29 : monthsInYear[i];
+                const millisecondsInMonth = 1000 * 60 * 60 * 24 * daysInMonth;
+                if (remainingMilliseconds >= millisecondsInMonth) {
+                    months++;
+                    remainingMilliseconds -= millisecondsInMonth;
+                } else {
+                    break;
+                }
+            }
+
+            // 计算天数差
+            const days = Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24));
+            remainingMilliseconds %= (1000 * 60 * 60 * 24);
+
+            // 计算小时差
+            const hours = Math.floor(remainingMilliseconds / (1000 * 60 * 60));
+            remainingMilliseconds %= (1000 * 60 * 60);
+
+            // 计算分钟差
+            const minutes = Math.floor(remainingMilliseconds / (1000 * 60));
+            remainingMilliseconds %= (1000 * 60);
+
+            // 计算秒数差
+            const seconds = Math.floor(remainingMilliseconds / 1000);
+
+            return {
+                years,
+                months,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+
+        function updateClock(elementId, startDateStr) {
+            const startDate = new Date(startDateStr);
+            startDate.setTime(startDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+            function updateTimeDisplay2() {
+                const endDate = new Date();
+                endDate.setTime(endDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+                const { years, months, days, hours, minutes, seconds } = calculateTimeDifference(startDate, endDate);
+
+                document.getElementById(elementId).innerHTML = `${years} 年 ${months} 月 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
+            }
+
+            // 每隔1秒更新一次时间差显示
+            setInterval(updateTimeDisplay2, 1000);
+        }
+
+        updateClock("txClock", "2001-09-01T00:00:00");
+    </script></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-11-05 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1147) <a href="/b1/985.html#comments"><i class="iconfont icon-com"></i> 评论(1)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-984" class="post_list">
+	  <a href="/b7/984.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">禁用这18个系统服务，快速提升windows11系统性能！</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/984.html"><p>在windows11中，有些服务所提供的功能并不是我们经常使用到的，我们可以通过禁用他们来提高系统的运行速度和性能。
+选择服务和应用程序，点击服务。</p>
+
+<p>双击一个服务，启动类型处选择禁用，点击确定，即可停用该服务。</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-11-02 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1070) <a href="/b7/984.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-983" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b8/983.html">读书虽然不是唯一的出路，但是能让你有更多的选择。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2024-10-31 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(780) <a href="/b8/983.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-982" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b6/982.html">【2024年全员轮训工作通知】各中心小学、市直学校：根据《关于开展2024年雷州市小学教师全员轮训的通知》（雷教〔2024〕100号），结合我市实际情况，今年全市小学语文教师全员轮训12天集中面授采取“全市集中学习7天和学校开展校本研修5天”的方式进行。其中全市集中培训拟于11月12日至12月15日安排4个星期二下午及5个星期天（共7天）举行，具体实施方法见“2024年全员轮训负责人技术员协调群”中《2024年雷州市小学教师全员轮训工作实施指引》，请各校（乡镇小学以中心小学为单位）赶于10月30日前将参训学员信息表（模板附后）电子版发至“WPS表单https://f.wps.cn/g/c9Oamjcb/ ”。同时，各校务必及时安排本次轮训工作负责人及技术员（共2人）通过二维码（附后）加入“2024年全员轮训负责人技术员协调群”。【雷州市教师发展中心2024.10.25】</div>	  
@@ -362,7 +474,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-28 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(786) <a href="/b6/982.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(808) <a href="/b6/982.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -373,7 +485,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-24 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(778) <a href="/b8/981.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(799) <a href="/b8/981.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -392,7 +504,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-23 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(781) <a href="/b6/980.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(805) <a href="/b6/980.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -411,7 +523,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-22 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(701) <a href="/b6/979.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(718) <a href="/b6/979.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -424,7 +536,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-21 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(760) <a href="/b7/978.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(775) <a href="/b7/978.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -435,7 +547,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-21 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(688) <a href="/b7/977.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(710) <a href="/b7/977.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -446,46 +558,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2024-10-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(719) <a href="/b7/976.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-975" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/975.html">【培训通知】雷州市公安局定于10月19日（星期六）上午8:30在雷州市体育馆开展校园最小应急单元安保人员演练培训。参加人员：各镇圩上的中小学校、幼儿园（不包含农村小学、农村幼儿园）分管安全工作领导，安保力量（最少3人，除值班人员外）。各参赛队伍保安员需着保安服装并携带“八件套”〔包括防暴头盔（1顶/人）、防护盾牌（1副）、防刺背心（1套/人）、防割手套（1副/人）、橡胶警棍（1支）、强光电筒（1支/人）、自卫喷雾剂（1支/人）、安全钢叉（1套）〕。请各镇中心小学负责通知镇圩上的小学和幼儿园参加。各参加人员提前15分钟报到。注：雷城街道、西湖街道、新城街道、白沙镇、附城镇辖区的校（园）于上周日已培训，无需再参加本次培训。联系人：公安局 何俊锋13590022206，教育局 吴妃耀 19124843050。【雷州市公安局 雷州市教育局 2024.10.18】</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2024-10-18 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(764) <a href="/b6/975.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-974" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/974.html">各小学：雷州市教学论文评选通知已发出，请各校组织教师撰写论文，按通知要求打印于11月8前把纸质版及电子版上送指导组，勿误。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2024-10-17 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(741) <a href="/b6/974.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-972" class="post_list">
-	  <a href="/b7/972.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">如何查询手机卡入网时间</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/972.html"><p>1.中国移动 ：打开微信→往下拉，搜索小程序“10086”→中国移动10086+→立即登录→允许→允许→点击左上角头像→截图该页面，登记入网时间即可。</p>
-<p>2.中国联通：打开联通APP“手机营业厅”查询基本信息或致电客服10010查询。</p>
-<p>3.中国电信：打开电信APP“电信营业厅”查询基本信息或发送短信CXKHXX到10001或查询。</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2024-10-13 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1127) <a href="/b7/972.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(735) <a href="/b7/976.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1050 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-14.html'>&lt;</a><a href='index-13.html'>13</a><a href='index-14.html'>14</a><span class="current">15</span><a href='index-16.html'>16</a><a href='index-17.html'>17</a><a href='index-16.html'>&gt;</a><a href='index-105.html'>尾页</a>	</div>
+		<span class="info"> 共计：1053 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-14.html'>&lt;</a><a href='index-13.html'>13</a><a href='index-14.html'>14</a><span class="current">15</span><a href='index-16.html'>16</a><a href='index-17.html'>17</a><a href='index-16.html'>&gt;</a><a href='index-106.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
