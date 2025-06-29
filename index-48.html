@@ -355,6 +355,56 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-626" class="post_list">
+	  <a href="/b7/626.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑使用技巧</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/626.html">win10 家庭中文版打开本地组策略编辑器：解决方案<br><br>
+
+　　新建一个txt文件-->将以下内容进行拷贝<br><br>
+
+pushd "%~dp0"<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt<br>
+for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
+　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；<br><br>
+
+　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； <br><br>
+
+　　将生成的bat文件和List.txt文件进行删除即可。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(8120) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-625" class="post_list">
+	  <a href="/b7/625.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让指定的div层在网页打开几秒后自动隐藏关闭</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/625.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">如果是jquery
+
+&lt;script&gt;
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{$(<span class="hljs-string">"#这里放id"</span>).hide()},<span class="hljs-number">1000</span>)<span class="hljs-comment">//1000是1秒</span>
+
+&lt;<span class="hljs-regexp">/script&gt;
+
+如果没有jquery
+
+&lt;script&gt;
+
+setTimeout(function(){document.getElementById("这里放id").style.display = "none"},1000)/</span><span class="hljs-regexp">/id是你要隐藏zhi的div的id 1000是1秒
+
+&lt;/</span>script&gt;
+
+把代码放在网页&lt;<span class="hljs-regexp">/body&gt;前面</span></code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-20 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4180) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-624" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b0/624.html">1.严格按照学校入校、离校的错锋时间接送孩子，确保不造成拥堵。<br>
@@ -373,7 +423,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3842) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3861) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -384,7 +434,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3322) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3340) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -399,7 +449,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4109) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4126) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -412,7 +462,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-10-16 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3051) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3069) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -423,7 +473,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-24 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3359) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3375) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -434,7 +484,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-22 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3473) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3492) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -458,7 +508,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3402) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3420) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -479,35 +529,11 @@ cho 执行完成</code></pre></div>
 	  <div class="meta">
 	  <p class="time">2020-09-17 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4992) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-616" class="post_list">
-	  <a href="/b0/616.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">第36个教师节：四年级四个学生，1男3女</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/616.html"><center><a href="/assets/file/2020/09/202009101.jpg" data-fancybox="gallery"><img src="/assets3/file/2020/09/202009101.jpg" width="100%" height="auto" </a></center></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-10 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3267) <a href="/b0/616.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-614" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b8/614.html">正在运送课本回校（林继、黄丽、陈娇凤），按班级分拣好课本。开始使用网上登记报名，核对学生、家长身份证号码、家长手机号码。<br>
-
-<a href="/assets/file/2020/08/2020082701.webp" data-fancybox="gallery"><img src="/assets3/file/2020/08/2020082701.webp" style="max-width:100%;"></a></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-28 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3299) <a href="/b8/614.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5008) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1053 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-47.html'>&lt;</a><a href='index-46.html'>46</a><a href='index-47.html'>47</a><span class="current">48</span><a href='index-49.html'>49</a><a href='index-50.html'>50</a><a href='index-49.html'>&gt;</a><a href='index-106.html'>尾页</a>	</div>
+		<span class="info"> 共计：1055 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-47.html'>&lt;</a><a href='index-46.html'>46</a><a href='index-47.html'>47</a><span class="current">48</span><a href='index-49.html'>49</a><a href='index-50.html'>50</a><a href='index-49.html'>&gt;</a><a href='index-106.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -546,7 +572,7 @@ cho 执行完成</code></pre></div>
 
 <a target="_blank" href="https://v3.dconline.net.cn" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
-<span class="unget" title="">6</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
+<span class="unget" title="">36</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
 </a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://v3.dconline.net.cn" title="">专业课</a></p>
 
 </div>
@@ -867,8 +893,8 @@ cho 执行完成</code></pre></div>
 <li><a href="https://i.mi.com/#/" target="_blank">小米云空间</a></li>
 <li><a href="https://layui.dev/" target="_blank">Layui 组件库</a></li>
 <li><a href="https://xptt.com" target="_blank">郑永博客</a></li>
-<li><a href="http://0393.com.cn" target="_blank">想上就上</a></li>
-<li><a href="http://www.xujianwei.com" target="_blank">徐建伟</a></li></ul>
+<li><a href="https://365.tf/" target="_blank">365博客</a></li>
+<li><a href="http://www.xulog.cn/" target="_blank">徐建伟</a></li></ul>
 		      </div>	  
 	 	  
 	 </div>
