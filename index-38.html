@@ -355,6 +355,144 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-746" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/746.html"> <table border="1" style="border-collapse: collapse; text-align: center; width: 100%;" class=""> 
+   <thead> 
+    <tr> 
+     <th style="width: 100px;"><strong>类别</strong></th> 
+     <th><strong>推荐食物</strong></th> 
+    </tr> 
+   </thead> 
+   <tbody> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">主食</td> 
+     <td style="text-align: left;padding-left: 10px;">藜麦、荞麦、燕麦、玉米、糙米</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">蔬菜</td> 
+     <td style="text-align: left;padding-left: 10px;">魔芋、黄瓜、菠菜、西兰花、油麦菜、莴苣、白菜、生菜、西葫芦、冬瓜、豆芽、黑木耳、海带、蘑菇、番薯叶、空心菜、芦笋、芹菜、苦瓜</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">水果</td> 
+     <td style="text-align: left;padding-left: 10px;">车厘子、火龙果、柚子、桃子、苹果、梨、草莓、橙、耙耙柑、龙眼、猕猴桃、蓝莓</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">蛋白质</td> 
+     <td style="text-align: left;padding-left: 10px;">鸡肉、鸭肉、鹅肉、猪肉、羊肉、鱼肉、鸡蛋、豆腐、豆类</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">健康脂肪</td> 
+     <td style="text-align: left;padding-left: 10px;">橄榄油、花生油、坚果（适量：夏威夷果、榛子、花生、碧根果（山核桃）、核桃、杏仁、巴旦木、松子、开心果、腰果）、深海鱼类</td> 
+    </tr> 
+    <tr> 
+     <td style="text-align: right;padding-right: 10px;">乳制品</td> 
+     <td style="text-align: left;padding-left: 10px;">低脂牛奶、酸奶（无糖）</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ <center>1️⃣空 腹3.9-6.1毫摩尔/升 2️⃣餐后1小时6.7-9.4毫摩/升 3️⃣餐后2小时≤7.8毫摩/升<br>
+   <span id="xtClocks" style="color: red;" title="2022-07-01" alt="2022-07-01">2 年 7 月 2 天 0 时 46 分 56 秒</span></center>  
+ 
+<script language="JavaScript" type="text/JavaScript">
+function showdiv(targetid,objN){
+   
+      var target=document.getElementById(targetid);
+      var clicktext=document.getElementById(objN)
+
+            if (target.style.display=="block"){
+                target.style.display="none";
+  
+
+            } else {
+                target.style.display="block";
+            }
+   
+}
+</script> 
+  <script language="javascript">
+        // 判断是否为闰年的函数
+        function isLeapYear(year) {
+            return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
+        }
+
+        // 计算两个日期之间时间差，并精确计算月份差的函数
+        function calculateTimeDifference(startDate, endDate) {
+            const diffInMilliseconds = endDate - startDate;
+
+            // 先计算完整的年份差
+            const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+            // 扣除已计算的年份对应的毫秒数，得到剩余毫秒数用于后续计算
+            let remainingMilliseconds = diffInMilliseconds % (1000 * 60 * 60 * 24 * 365);
+
+            // 计算月份差，通过逐月递减剩余毫秒数并统计月份
+            let months = 0;
+            const monthsInYear = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            const startYear = startDate.getFullYear();
+            for (let i = 0; i < 12; i++) {
+                const daysInMonth = i === 1 && isLeapYear(startYear + years)? 29 : monthsInYear[i];
+                const millisecondsInMonth = 1000 * 60 * 60 * 24 * daysInMonth;
+                if (remainingMilliseconds >= millisecondsInMonth) {
+                    months++;
+                    remainingMilliseconds -= millisecondsInMonth;
+                } else {
+                    break;
+                }
+            }
+
+            // 计算天数差
+            const days = Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24));
+            remainingMilliseconds %= (1000 * 60 * 60 * 24);
+
+            // 计算小时差
+            const hours = Math.floor(remainingMilliseconds / (1000 * 60 * 60));
+            remainingMilliseconds %= (1000 * 60 * 60);
+
+            // 计算分钟差
+            const minutes = Math.floor(remainingMilliseconds / (1000 * 60));
+            remainingMilliseconds %= (1000 * 60);
+
+            // 计算秒数差
+            const seconds = Math.floor(remainingMilliseconds / 1000);
+
+            return {
+                years,
+                months,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+
+        function updateClock(elementId, startDateStr) {
+            const startDate = new Date(startDateStr);
+            startDate.setTime(startDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+            function updateTimeDisplay() {
+                const endDate = new Date();
+                endDate.setTime(endDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+                const { years, months, days, hours, minutes, seconds } = calculateTimeDifference(startDate, endDate);
+
+                document.getElementById(elementId).innerHTML = `${years} 年 ${months} 月 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
+            }
+
+            // 每隔1秒更新一次时间差显示
+            setInterval(updateTimeDisplay, 1000);
+        }
+	
+        updateClock("xtClocks", "2022-07-01T00:00:00");
+    </script></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2022-07-01 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(786) <a href="/b0/746.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-745" class="post_list">
 	  <a href="/b4/745.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2022-2023学年校历</h2></a>      <div class="excerpt">
 	  	  <div class="textPost" data-url="/b4/745.html"><img src="/assets3/file/2022/06/20220624.jpg" style="max-width:100%;"></a></div>	  
@@ -362,7 +500,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-07-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2044) <a href="/b4/745.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2045) <a href="/b4/745.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -375,7 +513,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-21 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1958) <a href="/b0/744.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1961) <a href="/b0/744.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -386,7 +524,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-14 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1865) <a href="/b6/742.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1867) <a href="/b6/742.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -399,7 +537,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-10 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2192) <a href="/b0/741.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2195) <a href="/b0/741.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -411,7 +549,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-08 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2020) <a href="/b6/739.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2022) <a href="/b6/739.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -427,7 +565,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-07 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4088) <a href="/b0/738.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4090) <a href="/b0/738.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -438,7 +576,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-02 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2740) <a href="/b6/737.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2742) <a href="/b6/737.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -449,7 +587,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-06-01 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1788) <a href="/b6/736.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1790) <a href="/b6/736.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -460,28 +598,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2022-05-31 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1832) <a href="/b6/735.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-734" class="post_list">
-	  <a href="/b2/734.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2022广东省国家工作人员学法考试</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b2/734.html">学习时间：2022年4月11日—12月30日<br>
-
-考试时间：2022年6月1日—7月10日<br><br>
-
-1、学员可通过互联网登录广东省国家工作人员学法考试系统：<a href="http://xfks-study.gdsf.gov.cn" target="_blank">http://xfks-study.gdsf.gov.cn</a>（不要使用ie浏览器）或关注“广东普法”微信公众号进行学考。学员账号：本学员手机号码，初始密码：xfks1234。（学员密码重置请联系本单位管理员，单位密码重置，请联系同级普法办）<br><br>
-
-2、学习一个课件可获得0.5学分，练习题需全部回答正确才可以获得1学分，可以反复做练习题，但不强制要求完成，也可学习其它课件获取学分；累计完成40学分的学员，方可进入考场，参加年度学法考试。平台自动计算，未完成40学分的学员，不能进入考场。（考试期间不影响学员继续获取学分）</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2022-05-29 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4483) <a href="/b2/734.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(1834) <a href="/b6/735.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1067 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-37.html'>&lt;</a><a href='index-36.html'>36</a><a href='index-37.html'>37</a><span class="current">38</span><a href='index-39.html'>39</a><a href='index-40.html'>40</a><a href='index-39.html'>&gt;</a><a href='index-107.html'>尾页</a>	</div>
+		<span class="info"> 共计：1068 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-37.html'>&lt;</a><a href='index-36.html'>36</a><a href='index-37.html'>37</a><span class="current">38</span><a href='index-39.html'>39</a><a href='index-40.html'>40</a><a href='index-39.html'>&gt;</a><a href='index-107.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
