@@ -365,6 +365,173 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-1197" class="post_list">
+	  <a href="/b2/1197.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">(封档)2025年度继续教育学时</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b2/1197.html"><center>
+<!-- 学时显示开始 -->
+<div class="xueshi" style="text-align: center;font-size: 26px;font-weight: 600;width: 124%;margin-left: -12%;padding: 0px 0px 10px;background-color: #FFF;overflow: hidden;">
+
+			<div class="dataBl" style="display: inline-block;text-align: center;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);" title="">
+                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
+
+			    <span class="unget" title="">125</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/42</strong>
+
+                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">专业课</p>
+                        </div>
+			
+                        <div class="dataBl" style="display: inline-block;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);padding-bottom: 10px;" title="">
+                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
+
+			    <span class="unget" title="">30</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/30</strong>
+
+                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">公需课</p>
+                        </div>
+			
+                        <div class="dataBl" style="display: inline-block;text-align: center;width: 28%;" title="">
+                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
+
+			    <span class="unget" title="">36</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/18</strong>
+
+                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">选修课</p>
+                        </div>
+<!-- 学时显示结束 -->
+
+<!-- 距离 63 岁 -->
+<div id="life100" style="text-align: center;font-size: 14px;"></div>
+        <script language="javascript">
+            startclock2()
+            var timerID = null;
+            var timerRunning = false;
+
+            // 判断是否为闰年的函数
+            function isLeapYear(year) {
+                return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
+            }
+
+            function showtime4() {
+                // 获取当前时间并转换为东八区时间（北京时间）
+                var offset = new Date().getTimezoneOffset();
+                var now = new Date(Date.now() + offset * 60 * 1000 + 8 * 60 * 60 * 1000);
+                var NowHour = now.getHours();
+                var NowMinute = now.getMinutes();
+                var NowMonth = now.getMonth();
+                var NowDate = now.getDate();
+                var NowYear = now.getFullYear();
+                var NowSecond = now.getSeconds();
+
+                var targetYear = 2042;
+                var targetMonth = 9;
+                var targetDate = 8;
+
+                var Yearleft = targetYear - NowYear;
+                var Monthleft = targetMonth - NowMonth - 1;
+                var Dateleft = targetDate - NowDate;
+
+                // 处理时间差值计算，考虑各种边界情况以及闰年
+                if (Dateleft < 0) {
+                    Monthleft--;
+                    if (NowMonth === 1) {
+                        // 处理2月情况，区分闰年和平年
+                        if (isLeapYear(NowYear)) {
+                            Dateleft += 29;
+                        } else {
+                            Dateleft += 28;
+                        }
+                    } else {
+                        var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                        Dateleft += monthDays[NowMonth];
+                    }
+                }
+
+                if (Monthleft < 0) {
+                    Monthleft += 12;
+                    Yearleft--;
+                }
+
+                var Hourleft = 24 - NowHour;
+                var Minuteleft = 0 - NowMinute;
+                var Secondleft = 0 - NowSecond;
+
+                if (Secondleft < 0) {
+                    Secondleft = 60 + Secondleft;
+                    Minuteleft = Minuteleft - 1;
+                }
+                if (Minuteleft < 0) {
+                    Minuteleft = 60 + Minuteleft;
+                    Hourleft = Hourleft - 1;
+                }
+                if (Hourleft < 0) {
+                    Hourleft = 24 + Hourleft;
+                    Dateleft = Dateleft - 1;
+                    if (Dateleft < 0) {
+                        Dateleft += 31;
+                        Monthleft = Monthleft - 1;
+                        if (Monthleft < 0) {
+                            Monthleft += 12;
+                            Yearleft = Yearleft - 1;
+                        }
+                    }
+                }
+
+                var cc = document.getElementById('life100');
+                cc.innerHTML = '离 63 岁还有:'+Yearleft+'年 - '+Monthleft+'月 - '+Dateleft+'天 - '+Hourleft+'时 - '+Minuteleft+'分 - '+Secondleft+'秒' ; 
+                timerID = setTimeout("showtime4()", 1000);
+                timerRunning = true;
+            }
+
+            var timerID = null;
+            var timerRunning = false;
+
+            function stopclock2() {
+                if (timerRunning)
+                    clearTimeout(timerID);
+                timerRunning = false;
+            }
+
+            function startclock2() {
+                stopclock2();
+                showtime4();
+            }
+            // -->
+        </script>
+        <!-- 距离 63 岁 -->
+</div>
+</center>
+
+<center><img src="/assets/file/2024/01/2024010101.webp" width="100%" height="auto"></center>
+
+ <!-- 文章标题切换 -->
+<script>
+var items = document.querySelectorAll('#log-1197 a');
+items[0].innerHTML = '<center><strong class="ttst" style="text-align: center;font-size: 26px;font-weight: 600;width: 100%;background-color: #FFF;overflow: hidden;padding: 0px 0px 20px;">(封档)2025年度继教学时<br></strong></center><h2  class="ttst1" style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">(封档)2025年度继续教育学时</h2>';
+</script>
+<style type="text/css">
+@media screen and (min-width: 950px) and (max-width:99999px) {
+.ttst {
+    display: none;
+}
+.ttst1 {
+    display: block;
+}
+}
+@media screen and (max-width:950px){
+.ttst1 {
+    display: none;
+}
+.ttst {
+    display: block;
+}
+}
+</style>
+ <!-- 文章标题切换 --></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2025-12-31 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(287) <a href="/b2/1197.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-1194" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b6/1194.html"><p style="text-align: center; "><b>【关于班级请假管理规范的通知】
@@ -378,7 +545,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-28 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(486) <a href="/b6/1194.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(488) <a href="/b6/1194.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -389,7 +556,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-25 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(528) <a href="/b6/1193.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(531) <a href="/b6/1193.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -400,7 +567,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(634) <a href="/b6/1192.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(637) <a href="/b6/1192.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -411,7 +578,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-19 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(436) <a href="/b6/1191.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(440) <a href="/b6/1191.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -422,7 +589,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(809) <a href="/b6/1190.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(812) <a href="/b6/1190.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -479,7 +646,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(970) <a href="/b6/1189.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(975) <a href="/b6/1189.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -490,7 +657,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-15 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(622) <a href="/b6/1188.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(627) <a href="/b6/1188.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -503,7 +670,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-12 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(579) <a href="/b6/1187.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(584) <a href="/b6/1187.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -526,22 +693,11 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-12-11 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(628) <a href="/b6/1186.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1185" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1185.html"><p>【通知】各小学、幼儿园、托育托管机构：为了直接登录“粤苗”微信小程序开展儿童入托、入学接种证查验工作。根据教育局通知要求，先建好管理人员帐号，以后管理人员可通过扫二维码，将每位儿童接种信息纳入管理平台。请各校（园、机构）于2025年12月10日上午前填报1名管理员，把微信上面链接《雷州市杨家镇儿童入托、入学接种证查验教育机构账号名单收集表》的黄色栏目补充完整，以便汇总报送教育局。［杨家镇中心小学教育指导组2025年12月9日上午］</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-12-09 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(475) <a href="/b6/1185.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(632) <a href="/b6/1186.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1130 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-113.html'>尾页</a>	</div>
+		<span class="info"> 共计：1131 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-114.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
