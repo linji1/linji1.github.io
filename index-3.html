@@ -365,339 +365,138 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
-      <div id="log-1197" class="post_list">
-	  <a href="/b2/1197.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">(封档)2025年度继续教育学时</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b2/1197.html"><center>
-<!-- 学时显示开始 -->
-<div class="xueshi" style="text-align: center;font-size: 26px;font-weight: 600;width: 124%;margin-left: -12%;padding: 0px 0px 10px;background-color: #FFF;overflow: hidden;">
-
-			<div class="dataBl" style="display: inline-block;text-align: center;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);" title="">
-                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
-
-			    <span class="unget" title="">125</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/42</strong>
-
-                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">专业课</p>
-                        </div>
-			
-                        <div class="dataBl" style="display: inline-block;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);padding-bottom: 10px;" title="">
-                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
-
-			    <span class="unget" title="">30</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/30</strong>
-
-                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">公需课</p>
-                        </div>
-			
-                        <div class="dataBl" style="display: inline-block;text-align: center;width: 28%;" title="">
-                            <strong style="font-size: 26px;font-weight: 600;color: #ff7505;" title="">
-
-			    <span class="unget" title="">36</span></strong><strong style="font-size: 26px;font-weight: 600;" title="">/18</strong>
-
-                            <p style="font: 22px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;text-indent: 0px;text-align: center;" title="">选修课</p>
-                        </div>
-<!-- 学时显示结束 -->
-
-<!-- 距离 63 岁 -->
-<div id="life100" style="text-align: center;font-size: 14px;"></div>
-        <script language="javascript">
-            startclock2()
-            var timerID = null;
-            var timerRunning = false;
-
-            // 判断是否为闰年的函数
-            function isLeapYear(year) {
-                return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
-            }
-
-            function showtime4() {
-                // 获取当前时间并转换为东八区时间（北京时间）
-                var offset = new Date().getTimezoneOffset();
-                var now = new Date(Date.now() + offset * 60 * 1000 + 8 * 60 * 60 * 1000);
-                var NowHour = now.getHours();
-                var NowMinute = now.getMinutes();
-                var NowMonth = now.getMonth();
-                var NowDate = now.getDate();
-                var NowYear = now.getFullYear();
-                var NowSecond = now.getSeconds();
-
-                var targetYear = 2042;
-                var targetMonth = 9;
-                var targetDate = 8;
-
-                var Yearleft = targetYear - NowYear;
-                var Monthleft = targetMonth - NowMonth - 1;
-                var Dateleft = targetDate - NowDate;
-
-                // 处理时间差值计算，考虑各种边界情况以及闰年
-                if (Dateleft < 0) {
-                    Monthleft--;
-                    if (NowMonth === 1) {
-                        // 处理2月情况，区分闰年和平年
-                        if (isLeapYear(NowYear)) {
-                            Dateleft += 29;
-                        } else {
-                            Dateleft += 28;
-                        }
-                    } else {
-                        var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-                        Dateleft += monthDays[NowMonth];
-                    }
-                }
-
-                if (Monthleft < 0) {
-                    Monthleft += 12;
-                    Yearleft--;
-                }
-
-                var Hourleft = 24 - NowHour;
-                var Minuteleft = 0 - NowMinute;
-                var Secondleft = 0 - NowSecond;
-
-                if (Secondleft < 0) {
-                    Secondleft = 60 + Secondleft;
-                    Minuteleft = Minuteleft - 1;
-                }
-                if (Minuteleft < 0) {
-                    Minuteleft = 60 + Minuteleft;
-                    Hourleft = Hourleft - 1;
-                }
-                if (Hourleft < 0) {
-                    Hourleft = 24 + Hourleft;
-                    Dateleft = Dateleft - 1;
-                    if (Dateleft < 0) {
-                        Dateleft += 31;
-                        Monthleft = Monthleft - 1;
-                        if (Monthleft < 0) {
-                            Monthleft += 12;
-                            Yearleft = Yearleft - 1;
-                        }
-                    }
-                }
-
-                var cc = document.getElementById('life100');
-                cc.innerHTML = '离 63 岁还有:'+Yearleft+'年 - '+Monthleft+'月 - '+Dateleft+'天 - '+Hourleft+'时 - '+Minuteleft+'分 - '+Secondleft+'秒' ; 
-                timerID = setTimeout("showtime4()", 1000);
-                timerRunning = true;
-            }
-
-            var timerID = null;
-            var timerRunning = false;
-
-            function stopclock2() {
-                if (timerRunning)
-                    clearTimeout(timerID);
-                timerRunning = false;
-            }
-
-            function startclock2() {
-                stopclock2();
-                showtime4();
-            }
-            // -->
-        </script>
-        <!-- 距离 63 岁 -->
-</div>
-</center>
-
-<center><img src="/assets/file/2024/01/2024010101.webp" width="100%" height="auto"></center>
-
- <!-- 文章标题切换 -->
-<script>
-var items = document.querySelectorAll('#log-1197 a');
-items[0].innerHTML = '<center><strong class="ttst" style="text-align: center;font-size: 26px;font-weight: 600;width: 100%;background-color: #FFF;overflow: hidden;padding: 0px 0px 20px;">(封档)2025年度继教学时<br></strong></center><h2  class="ttst1" style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">(封档)2025年度继续教育学时</h2>';
-</script>
-<style type="text/css">
-@media screen and (min-width: 950px) and (max-width:99999px) {
-.ttst {
-    display: none;
-}
-.ttst1 {
-    display: block;
-}
-}
-@media screen and (max-width:950px){
-.ttst1 {
-    display: none;
-}
-.ttst {
-    display: block;
-}
-}
-</style>
- <!-- 文章标题切换 --></div>	  
+      <div id="log-1206" class="post_list">
+	  <a href="/b8/1206.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">什么是三观?</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b8/1206.html"><p style="text-align: center; ">世界观：认清别人<br></p><p style="text-align: center;">人生观：认清自己
+</p><p style="text-align: center;">价值观：认清现实
+</p><p><b>1、世界观
+</b></p><p>你走过的路，读过的书，你见过的人。就是你的世界观。
+</p><p>不登高山，不知天之高，一个人的世界观是由他的所见所闻决定的。
+</p><p><b>2、价值观
+</b></p><p>价值观就是你认为怎么做是对的。比如说有的人会认同知识改变命运，有的人觉得健康是最重要的，还有的人认为财富才是最重要的，这就是价值观。
+</p><p><b>3、人生观
+</b></p><p>人生观就是你读了那么多书，走了那么多路，然后回到自我身上去思考我的梦想是什么，我要成为怎样的人。你的世界观和价值观共同决定了你的人生观。
+</p><p>世界观是填空题。世界观是看问题的高度，价值观是判断题，价值观是看问题的角度，人生观是选择题。人生观是看问题的态度。</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-31 通过网页 
+	  <p class="time">2026-01-27 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(287) <a href="/b2/1197.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(318) <a href="/b8/1206.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1194" class="post_list">
+      <div id="log-1205" class="post_list">
+	  <a href="/b3/1205.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">（改革前后）中小学教师职称十二级对照表</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/1205.html"><p>对于中小学教师职称等级，我相信大部分老师已经有所了解。其实简单来说，改革后的教师职称可以分为五个等级：正高级教师、高级教师、一级教师、二级教师和三级教师。这五个等级分别对应正高、副高、中级、助理和员级。</p>
+<p>中小学教师职称制度改革后，中小学统一规范职称名称，教师的职称等级变的更加明确和简洁，专业技术岗位等级不再繁琐，一目了然。</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2026-01-26 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(799) <a href="/b3/1205.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-1204" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1194.html"><p style="text-align: center; "><b>【关于班级请假管理规范的通知】
-</b></p><p>开学至今，我们班每日请假人数都较多！为规范班级管理秩序，保障正常教学开展，经学校政教处与年级管理组和班主任沟通研讨，特制定以下请假管理方案，自周日晚起正式执行：
-</p><p>1.一周内，学生请假累计请假时长达1天（共计9节课）以内的，家长可直接在家长群先发电子请假条，再发语音请假；备注：每日课时核算标准为上午6节课（含早读）、下午3节课、晚修3节课（含晚读）。
-</p><p>2.一周内，学生累计请假时长超过1天的，须凭病历等相关证明办理请假，无相关证明者按缺席处理，后续将交由年级管理组按校纪校规统一处置。
-</p><p>3.舞蹈老师要求，原则上周二舞蹈生的专业课不允许任何同学请假，若因很特殊的情况需要请假的，直接在舞蹈专属群（2028届舞蹈班家长群）跟舞蹈教师请假，确保舞蹈老师精准做好考勤与教学管理！
-</p><p>希望家长们一定要配合学校的工作，千万不要因为一些很小的问题就随意帮孩子请假，这不仅严重影响孩子的学习，还会让孩子养成散漫拖沓的坏习惯！总之，家校要配合管理孩子，由学校单方面管理，而家长一味地纵容请假，这是绝对不可取的！您们家一两位孩子都那么难管理了，我们要管五六十个这样的孩子，更需要家长们的理解与配合，才能共同做好班级管理工作。
-<p>不过大家放心，这个请假方案不是“死规矩”，老师会根据大家的实际情况灵活处理。我们经过三周的观察，已对班级内经常请假学生的具体情况有所掌握！</p></p><p style="text-align: right; ">【雷州二中高一（7）班 20251228 15:48】</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1204.html"><p style="text-align: center; ">【通知】</p>各小学、幼儿园、托育托管机构：<br><p>现定于2026年1月26日（星期一）上午9：30在指导组一楼党员活动中心召开期末工作会议。参加会议人员：各小学校长、幼儿园园长、托育托管机构负责人、指导组和记账组全体成员。</p><p style="text-align: right; ">杨家镇中心小学教育指导组<br>2026年1月25日上午</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-28 通过网页 
+	  <p class="time">2026-01-25 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(488) <a href="/b6/1194.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(271) <a href="/b6/1204.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1193" class="post_list">
+      <div id="log-1203" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1193.html"><p style="text-align: center; "><b>【通知】</b></p><p>各小学：</p><p>1、请派人于2025年12月29日前到指导组取回12月份的《农村边远地区教师生活补助发放名册》，按上个月操作方法，各校认真核对一下，有差错的电话联系姚权兴同志更正，如果无误学校领导小组成员签名（教师可以不签名），盖学校公章，张贴公示5天，然后拍摄公示照片保存好，于2025年12月31日前点击校长群上面的“杨家镇小学2025年12月份农村边远地区教师生活补助公示照片收集（群报数）”，上传公示照片。注意：要点击“原图”再提交。</p><p>2、另外取回第四季度（10、11、12月份）汇总的《农村边远地区教师生活补助发放名册》（此表不需要公示），一定要求教师本人签名，盖学校公章后领导小组成员也要签名。本表一式三份，于2026年1月6日前交三份到指导组（交人社局、教育局和报账用）。注意：三份表用回形针别好，不要用订书机装订。</p><p>3、另外取回《机关事业单位基本养老保险2026年度缴费工资申报表》让教师查看自己2026年缴费工资基数是多少，这样可以计算出自己2026年每月扣了多少“养老保险”和“职业年金”（养老保险=工资缴费基数×8%，职业年金=工资缴费基数×4%）。该表学校存档，不要交回。</p><p>4、另外再取回《聘用合同续签书》发给教师本人存档。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2025年12月25日下午］</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1203.html"><p style="text-align: center; ">【通知】</p>
+各小学：<br>
+<p>请派人于今天（1月25日）下午4点半左右到教育指导组一楼领取期末考试卷和寒假作业，当场清点试卷科目，看清楚试卷袋所贴标签是不是你学校的，如果欠缺试卷请汇报给陈泽同志。各校领回试卷后要指定专人保管，做好保密工作。英语听力提前半小时发到校长微信群，各科参考答案考完试后再发在校长微信群上。</p><p style="text-align: right; ">杨家镇中心小学教育指导组<br>2026年1月25日上午</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-25 通过手机 
+	  <p class="time">2026-01-25 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(531) <a href="/b6/1193.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(271) <a href="/b6/1203.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1192" class="post_list">
+      <div id="log-1202" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1192.html"><p>【通知】各位管理员：根据湛江市教育局的要求，请各位于2025年12月15日前完成“全国教育信息化工作管理信息系统”第四季度数据填报工作，此系统数据关系到省对市县级人民政府履行教育职责考核评价，务必高度重视。本季度数据由于“学生数量、教师数量和班级数量”有变化，故各位在填报前，先认真理清本校第三季度数据为何这样填报，然后再结合本季度填报要求及操作步骤按时准确完成填报工作。填报要求及详细操作步骤附后。联系人：饶晓，联系电话：13542049639。【教育技术室2025.12.3】</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1202.html"><p style="text-align: center; ">【通知】</p>
+各小学、幼儿园、托育托管机构：<br>
+<p>为了直接登录“粤苗”微信小程序开展儿童入托、入学接种证查验工作。根据教育局、卫生局通知要求，请微信上面的《雷州市杨家镇教育机构账号名单》中人员，按下列步骤操作：</p><p>1、用手机微信扫上面的二维码［粤苗］小程序进行实名认证，通过后可看到［学校入学查验］功能模块；</p><p>2、选择2025年，随之进行编辑所有班级，返回点击［学校入学查验］、［入学扫码］，按各班别人数扫本班所有家长提交的入学预防接种证查验报告上的二维码，完成学校查验管理；</p><p>3、扫码查验后可点击［查验列表］，查看本校已查验纳管总人数及列表明细信息，后台对查验纳管漏种儿童定期推送［未接种人员］名单，学校查码工作人员可在［未种通知］列表中查看漏种人员名单，并及时进行催促补种。</p><p>4、【温馨提示】各小学::<b><font color="#ff00ff">只扫幼儿至三年级学生</font></b>的入学预防接种证查验报告上的二维码，完成学校预防接种查验管理。</p><p>以上工作于2026年1月25日前完成。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2026年1月23日下午］</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-19 通过网页 
+	  <p class="time">2026-01-24 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(637) <a href="/b6/1192.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(298) <a href="/b6/1202.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1191" class="post_list">
+      <div id="log-1201" class="post_list">
+	  <a href="/b3/1201.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">关于2025-2026学年度小学综合学科质量检测相关事项的说明</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b3/1201.html"><p><b>一、检测科目
+</b></p><p>2025-2026学年度小学综合学科质量检测涵盖两门学科，分别为道德与法治、科学。
+</p><p><b>二、检测内容
+</b></p><p>检测内容覆盖各年级教材中的相关知识与能力要点。
+</p><p><b>三、检测分值</b></p><p>道德与法治、科学两门学科不单独命题，而是组合为一张综合试卷进行考查，试卷卷面总分设定为100分。其中，道德与法治学科试题分值占卷面总分的50%(即50分)，科学学科试题分值同样占卷面总分的50%(即50分)。
+</p></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2026-01-23 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(318) <a href="/b3/1201.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-1200" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1191.html"><p>【工作提醒】省教育厅布置的系统填报任务，市教育局已直接分发给所有学校（含幼儿园），请各校园<a href="https://xyaq.gdedu.gov.cn/schoolSafe/user/login" target="_blank">登陆系统</a>进行数据填报。于12&nbsp;月&nbsp;19&nbsp;日前完成填报，确保数据真实、准确、无遗漏。</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1200.html"><p style="text-align: center; ">【通知】</p>各小学：<br><p>1、请核对微信上面的《2025年9月至2026年2月杨家镇小学教师奖励性绩效工资汇总表》中的人数和拨款金额是否相符（每个月533元），有异议的电话联系姚权兴同志；</p><p>2、请依据你校的《雷州市杨家镇XX小学教职工奖励性绩效工资考核方案》，按照上学期的考核方法，对本校教职工（含派入支教你校的教师）本学期奖励性绩效工资进行考核（不能考核出全校所有教职工的金额都相同），然后填报《雷州市中小学校奖励性绩效工资考核评分表》（该表最后一列的“绩效金额”要保留整数，并且全校的合计金额要与微信上面的“奖励性绩效工资汇总表”中你校的发放金额相一致）；</p><p>3、考核完毕后把教职工的绩效金额对应填入《（1月30日）杨家镇小学2025年9月至2026年2月教师奖励性绩效工资代拨明细表》中（只填你校的，其它校留空不要删掉），填完后再次核对一下姓名所对应的金额；</p><p>4、用工资报销表填写《2025年9月至2026年2月教师奖励性绩效工资签领表》，要求教师签名并盖章；</p><p>5、特别强调：不要改变《（1月30日）杨家镇小学2025年9月至2026年2月教师奖励性绩效工资代拨明细表》电子版中的姓名顺序和账号（如果某教师换卡或已更新账号与代拨明细表中的账号不一致的，要在2026年1月28日前电话联系姚权兴同志更改），以上三种表格教职工的姓名顺序及金额要一致；</p><p>6、于2026年2月3日前点击校长群上面的“（1月30日）杨家镇小学2025年9月至2026年2月教师奖励性绩效工资代拨明细表（群报数）”，把填好的“奖励性绩效工资代拨明细表”电子版上传在“群报数”中，不准另外发在微信群上；</p><p>7、于2026年2月3日前把《雷州市中小学校奖励性绩效工资考核评分表》和《2025年9月至2026年2月教师奖励性绩效工资签领表》纸质原件及复印件（复印件也要再盖章）各1份交给陈泽同志代收，不要发电子版。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2026年1月19日上午］</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-19 通过手机 
+	  <p class="time">2026-01-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(440) <a href="/b6/1191.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(297) <a href="/b6/1200.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1190" class="post_list">
-	  <a href="/b6/1190.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">教师个人所得税七项专项附加扣除和扣缴申报</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1190.html"><p>【温馨提示】各小学：教师个人所得税七项专项附加扣除和扣缴申报每年一次，2026年的申报现在可以操作了，请提醒教师于2025年12月30日前完成个人所得税七项专项附加扣除操作。操作方法如下：</p><p>一、2025年已申报个税扣除，2026年继续享受的，请打开手机“个人所得税”APP，登录入后，点击专项附加扣除的“去确认”或“填报”按键，进入下一界面后点击“一键带入”，再点击“确定”，如果右边出现绿色“可确认”，表示该项2026年可以继续享受，如果要更新就点击该项进入修改，没错就不改，然后点击手机屏右上角的“一键确认”，再点击“确认”；如果出现红色“待修改”，表示时间等信息2026年不能再继续享受专项附加扣除，必须点击“待修改”进入该项再点击“修改”，更改扣除比例、教育信息、分摊方式、赡养人信息等内容，使其符合享受条件，这样才出现绿色“可确认”，然后点击手机屏右上角的“一键确认”，再点击“确认”。</p><p>二、确认后如果还要修改，可以查看手机屏“一键带入”文字下面的“填报记录”，进入该项并点击“修改”，修改正确后再点击“确认修改”。</p><p>三、如果是重新注册、重新录入信息，可以进入手机“个人所得税”APP并点击“申报专项附加扣除填报”，选择“子女教育”或其它项点击进入，选2026年，然后按提示填报。特别强调：填报某项附加扣除信息时，在最后一步的“选择申报方式”，选第一点“通过扣缴义务人申报”，再选择“雷州市杨家镇中心小学”，不要选“雷州市财政局”。不懂得操作的请其他教师帮忙注册并填报。</p><p>四、为了减少缴纳个人所得税，如果确实有符合七项专项附加扣除的，请各教师尽快在手机“个人所得税”APP中操作申报。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2025年12月18日上午］</p></div>	  
+      <div id="log-1199" class="post_list">
+	  <a href="/b2/1199.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">培训通知｜2026年春季学期人教版：新教材讲堂 | 人教云教研 | 新教材培训</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b2/1199.html"><img src="/assets/file/2026/02/2026022805.webp" style="max-width:100%;" loading="lazy"><br>
+<img src="/assets/file/2026/02/2026022806.webp" style="max-width:100%;" loading="lazy"><br>
+<img src="/assets/file/2026/02/2026020501.webp" style="max-width:100%;" loading="lazy"></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-18 通过网页 
+	  <p class="time">2026-01-15 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(812) <a href="/b6/1190.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(456) <a href="/b2/1199.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1189" class="post_list">
-	  <a href="/b6/1189.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2026年春季小学阶段期末教学质量检测科目、时间与内容安排表</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1189.html"><table style="text-align: center;" cellspacing="0" bordercolordark="#ffffff" cellpadding="4" width="100%" bordercolorlight="#479128" border="1"> 
-   <tbody> 
-    <tr> 
-     <td rowspan="2"> 年级 </td> 
-     <td colspan="2"> 1月27日 (星期二) </td> 
-     <td colspan="2"> 1月28日 (星期三) </td> 
-    </tr> 
-    <tr> 
-     <td> 上午 </td> 
-     <td> 下午 </td> 
-     <td> 上午 </td> 
-     <td> 下午 </td> 
-    </tr> 
-    <tr> 
-     <td> 三年级 </td> 
-     <td> 语文<br> 8: 00-9: 30 </td> 
-     <td> 综合<br> 3: 00-3:50 </td> 
-     <td> 数学<br> 8: 00-9:00 </td> 
-     <td> 英语<br> 3:00-4:00 </td> 
-    </tr> 
-    <tr> 
-     <td> 四年级 </td> 
-     <td> 语文<br> 8:00-9:30 </td> 
-     <td> 综合<br> 3:00-3:50 </td> 
-     <td> 数学<br> 8:00-9:20 </td> 
-     <td> 英语<br> 3:00-4:00 </td> 
-    </tr> 
-    <tr> 
-     <td> 五年级 </td> 
-     <td> 语文<br> 10:00-11:30 </td> 
-     <td> 综合<br> 4:20-5:10 </td> 
-     <td> 数学<br> 9:50-11:10 </td> 
-     <td> 英语<br> 4:30-5:30 </td> 
-    </tr><tr> 
-     <td> 六年级 </td> 
-     <td> 语文<br> 10:00-11:30 </td> 
-     <td> 综合<br> 4:20-5:10 </td> 
-     <td> 数学<br> 9:50-11:10 </td> 
-     <td> 英语<br> 4:30-5:30 </td> 
-    </tr> 
-   </tbody> 
-  </table>
-
-
-
-
-<p>说明：综合科为《道德与法治》《科学》学科合卷。</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-12-18 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(975) <a href="/b6/1189.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1188" class="post_list">
-	  <a href="/b6/1188.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">关于做好2026年春季中小学教学用书征订工作的通知</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1188.html"><p>【通知】各小学：根据相关文件要求及教育局、书店的通知，2026年春季课本征订工作要求如下：</p><p>1、请各校长于今天（2025年12月15日）下午4时左右带来学校公章及学生人数到教育指导组二楼征订下学期课本（注意：要认真细致地填写订书表格，书写要工整，不要涂改，需要征订教师课本及教参书、教案等要写清楚）。</p><p>2、放在地板上的课本征订文件通知各取1份带回存档，不要交。有红色公章的主科课本（8开教学用书征订目录）、副科课本（A4教学用书征订目录）两种订单各取3份（填后签名盖章当场交主科课本、副科课本订单各2份，另1份学校存档下学期开学领课本时带来核对）。</p><p>3、学生作业本订购合同书取2份（填后签名盖章当场交1份，另1份学校存档）。</p><p>4、要征订三、四、五年级的暑假作业，是免费配送的。</p><p>5、带来下学期的一至六年级学生人数（含科任教师在内）填表征订下学期单元测验试卷。</p><p>6、在“粤教翔云数字教材平台”管理系统填报征订教材时间另行通知。联系人：陈泽。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2025年12月15日上午］</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2025-12-15 通过手机 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(627) <a href="/b6/1188.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-1187" class="post_list">
+      <div id="log-1198" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1187.html"><p>【通知】湛江市实验中学、各中学、中心小学、市直学校：</p><p>根据《关于2025年落实〈学生体质健康监测评价办法〉等三个办法有关工作的通知》要求，请各学校赶于2025年12月20日前完成上报工作，要求如下：
-</p><p>一、学生体质健康测试及视力数据。进入国家体质健康网填报测试数据（中国学生体质健康网址为www.csh.moe.edu.cn），数据要真实准确（2025年《国家学生体质健康标准》优良率是55%及以上，合格率93%及以上，视力5.0为正常），中心小学负责通知辖区学校。联系人：陈文东（13724704218）
-</p><p>二、2025年学校体育工作年度报告。学校体育工作年度报告数据填报功能已融入国家学生体质健康标准数据管理与分析系统（网址<a href="www.csh.moe.edu.cn" target="_blank">www.csh.moe.edu.cn</a>），用户名及密码与《国家学生体质健康标准》测试数据上报使用相同，上网填报时要把2个表格（①中小学校体育评估自评结果报表、②中小学校体育工作年度报表）填写好打印后制作成pdf版（盖章）再上传。中心小学负责通知辖区学校。联系人：陈永存（13729137676）</p><p style="text-align: right; ">【雷州市教育局】</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1198.html"><p style="text-align: center; ">【温馨提示】</p><p>各小学：2026年1月工资扣个人所得税名单已发在上面，请查看，个人所得税比上个月少扣几元，工资也比上个月少了几十元不等。现解释如下：</p><p>（1）11月底已发了《机关事业单位基本养老保险2026年度缴费工资申报表》让老师查看对比基数，由于2025年1月份调整工资，教师增加了几百元不等，同时2025年6月也增加晋升工资几十元不等，因此，从表中可以看出教师2025年比2024年月平均工资高得多；</p><p>（2）2026年1月起就按2025年的“月平均工资”作为缴费工资基数扣缴养老保险（缴费工资基数×8%）和年金（缴费工资基数×4%），由于缴费工资基数高了，2026年1月就多扣了养老保险和年金。因此，2026年1月份工资比上个月少几十元不等；</p><p>（3）有的老师领取实发工资超过5000元，但未在手机个人所得税APP中操作，也扣了个人所得税，详见微信上面的《扣个人所得税名单》，工资少了扣税也少几元。</p><p>（4）如果有符合个人所得税七项扣除而未操作的老师，请通知他们这几天补操作。</p><p>（5）这几天可派人到指导组取回你校教师2026年1月的《工资代扣款项明细表》让教师查看，下周发来工资时各教师再核对工资簿，教师有异议的校长根据上面内容先做好解释，确实错误的再咨询姚权兴同志。《工资代扣款项明细表》不准拍照、不准转发、不准外传。</p><p style="text-align: right; ">［杨家镇中心小学教育指导组2026年1月15日上午］</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-12 通过网页 
+	  <p class="time">2026-01-15 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(584) <a href="/b6/1187.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(318) <a href="/b6/1198.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-1186" class="post_list">
+      <div id="log-1196" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/1186.html"><p>【通知】各小学：全国基础教育管理服务平台（学籍系统2.0）已正常使用，原来的学籍系统1.0已停止。《（新）杨家镇小学全国基础教育管理服务平台（学籍系统2.0）登录账号、密码》已发在本微信群上面，请各校学籍管理员进入系统（全国基础教育管理服务平台网址：<a href="https://zxxs.moe.edu.cn/" target="_blank">https://zxxs.moe.edu.cn/</a>）先重置密码，<span class="blur-text">只能重置为#Yj8224136或*Yj8224136</span>
-<style>
-    .blur-text {
-      filter: blur(3px);
-    }
-    .blur-text:active { /* 仅在鼠标按下时触发 */
-      filter: blur(0);
-    }
-        .blur-text:hover { /* 仅在鼠标悬停时触发 */
-      filter: blur(0);
-    }
-  </style>
-，到期后两者互换重置，不能另外自己设置密码。各学籍管理员进入新学籍系统，自己摸索，尝试操作，逐步熟练掌握学籍系统各个功能，以便适应学籍业务办理。［杨家镇中心小学教育指导组2025年12月11日下午］</p></div>	  
+	  	  <div class="textPost" data-url="/b6/1196.html"><div style="text-align: center;">【温馨提醒】</div><div>①学生放假时间:1月31日至2月27日止，2月28-3月1日报名注册，3月2日（农历正月十四）开学上课。</div><div>②教师放假时间:2月3日至2月26日，2月27日上午起正常返校工作，考勤登记。</div><div>③寒假期间不得以任何形式组织学生进行补课。</div></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2025-12-11 通过网页 
+	  <p class="time">2026-01-08 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(632) <a href="/b6/1186.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(426) <a href="/b6/1196.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1131 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-114.html'>尾页</a>	</div>
+		<span class="info"> 共计：1142 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-2.html'>&lt;</a><a href='index-1.html'>1</a><a href='index-2.html'>2</a><span class="current">3</span><a href='index-4.html'>4</a><a href='index-5.html'>5</a><a href='index-4.html'>&gt;</a><a href='index-115.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -1031,12 +830,11 @@ items[0].innerHTML = '<center><strong class="ttst" style="text-align: center;fon
         <h3>热评文章</h3>     
 			 
            <ul class="topic"><li><a href="587.html">2026年度继续教育学时</a> <i class="iconfont icon-comm"></i> 10</li><li><a href="828.html">盛世华诞    举国同庆
-</a> <i class="iconfont icon-comm"></i> 7</li><li><a href="683.html">（小考全部试卷）雷州市2021年小学六年级教学质量监测</a> <i class="iconfont icon-comm"></i> 6</li><li><a href="652.html">2021届毕业班集体照</a> <i class="iconfont icon-comm"></i> 3</li><li><a href="19.html">现在正在想办法给空间续费</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="753.html">记录第五轮全员核酸检测——在店前山尾当采样志愿者</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1032.html">雷州各镇的村庄简史及姓氏来源（调风篇）</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1.html">博客面前 人人可以是记者</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="425.html">2013届毕业班集体照</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="697.html">2021年雷州市林氏优秀学子报名具体事项</a> <i class="iconfont icon-comm"></i> 1</li> </ul>
+</a> <i class="iconfont icon-comm"></i> 8</li><li><a href="683.html">（小考全部试卷）雷州市2021年小学六年级教学质量监测</a> <i class="iconfont icon-comm"></i> 6</li><li><a href="652.html">2021届毕业班集体照</a> <i class="iconfont icon-comm"></i> 3</li><li><a href="19.html">现在正在想办法给空间续费</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="753.html">记录第五轮全员核酸检测——在店前山尾当采样志愿者</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1032.html">雷州各镇的村庄简史及姓氏来源（调风篇）</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1.html">博客面前 人人可以是记者</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="425.html">2013届毕业班集体照</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="697.html">2021年雷州市林氏优秀学子报名具体事项</a> <i class="iconfont icon-comm"></i> 1</li> </ul>
 	          </div>	  
 	       <div class="widget">
         <h3>最新评论</h3>     
-		           <ul class="comment"><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="828.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="828.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="935.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="559.html#Com-37">徐建伟 : 全部显示我终于知道怎么回</a></li><li><a href="559.html#Com-36">徐建伟 : 方便加个QQ吗99369</a></li><li><a href="559.html#Com-35">徐建伟 : 我这边已经添加链接！
-</a></li></ul>	 
+		           <ul class="comment"><li><a href="828.html#Com-48">徐建伟 : 今年是大年初六，我们已开</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="828.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="828.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="935.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="559.html#Com-37">徐建伟 : 全部显示我终于知道怎么回</a></li><li><a href="559.html#Com-36">徐建伟 : 方便加个QQ吗99369</a></li></ul>	 
               </div>	  
 	       <div class="widget">
         <h3>友情链接</h3>     
