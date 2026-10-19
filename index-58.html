@@ -365,6 +365,128 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 		    	 
+      <div id="log-626" class="post_list">
+	  <a href="/b7/626.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑使用技巧</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/626.html">win10 家庭中文版打开本地组策略编辑器：解决方案<br><br>
+
+　　新建一个txt文件-->将以下内容进行拷贝<br><br>
+
+pushd "%~dp0"<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt<br>
+for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
+　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；<br><br>
+
+　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； <br><br>
+
+　　将生成的bat文件和List.txt文件进行删除即可。</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-22 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(11778) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-625" class="post_list">
+	  <a href="/b7/625.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让指定的div层在网页打开几秒后自动隐藏关闭</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/625.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">如果是jquery
+
+&lt;script&gt;
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{$(<span class="hljs-string">"#这里放id"</span>).hide()},<span class="hljs-number">1000</span>)<span class="hljs-comment">//1000是1秒</span>
+
+&lt;<span class="hljs-regexp">/script&gt;
+
+如果没有jquery
+
+&lt;script&gt;
+
+setTimeout(function(){document.getElementById("这里放id").style.display = "none"},1000)/</span><span class="hljs-regexp">/id是你要隐藏zhi的div的id 1000是1秒
+
+&lt;/</span>script&gt;
+
+把代码放在网页&lt;<span class="hljs-regexp">/body&gt;前面</span></code></pre></div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-20 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5722) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-624" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b0/624.html">1.严格按照学校入校、离校的错锋时间接送孩子，确保不造成拥堵。<br>
+一.二年级<br>
+  上午7：30一11：00<br>
+  下午2：30一4：  25<br>
+三.四.五年级<br>
+上午7：20一11：15<br>
+下午2：20一4：35<br>
+六年级<br>
+上午7：20一11：15<br>
+下午2：20一5：30<br>
+      再三强调，学校大门上午开门时间为7：20分，下午开门时间为2：20分。学生来校时间不能过早，在家校管理盲区存在很大的安全隐患，务必引起重视。<br>
+      让我们共同呵护好每一个孩子！</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-19 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5500) <a href="/b0/624.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-623" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/623.html">【通知】各小学：1、现定于10月20日（星期二）上午9：00在管理组召开党员会议及校长会议（参加会议党员要在8：45前到达并签到）。先召开党员会议，然后校长留下来再开会（几个非党员校长要在上午10：00前到管理组等待），请各校通知党员（含退休党员）依时参加；2、纪腾龙同志已发《“湛江发布”微信公众号、“视听湛江”APP……》等几个文件在微信上面，请各校下载并按要求执行；3、上级部门于10月20日至23日到我镇检查人居环境卫生整治工作，请各校每天要搞好校园及周边环境卫生，迎接检查，并拍照搞卫生现场图片发到微信收发群。［杨家镇中心管理组2020年10月19日上午发送］</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-19 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4890) <a href="/b6/623.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-622" class="post_list">
+	  <a href="/b0/622.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">湛江市第七次全国人口普查</h2></a>      <div class="excerpt">
+	  <div class="thumbnail"><a href="/b0/622.html"><img src="/assets3/file/2020/10/s_191454_1036564001.jpg" /></a></div>	  <div class="textPost" data-url="/b0/622.html">对于每个普查小区，摸底和短表登记时，这四个数据是重中之重：现住人口（人在户在+人在户不在+人在户口待定）、户籍外出（住在本村居委其他小区+住在本村委会以外）、出生人口、死亡人口。这几个指标普查员必须正确理解，这个问题很严重，请各普查员引起高度重视，会导致户籍人数虚增，如果有错误大家赶紧进行修改，虚增到时候更麻烦！容易导致出现系统性误差，后期返工将无所适从！！！请大家一定要引起重视！！！
+<br><br>
+由于指导的问题，导致很多村委把“新增住户”和“新增住户单元”搞错，因此之前错误的就不用改了，接下来操作的时候，如果是一个家庭里面如果分户口了，就要分开做，不能合在一起，例如:我和我老爸分户口了，在家里面就登记两户，不能融在一起，在住房单元里面新增住户，注意:不是新增住房单元。之前解答有错误了，希望大家谅解一，改一下。<br>
+假如:在一个建筑物里面我老爸一个户口，我一个户口，我老弟一个户口，就一个住房单元里面新增多两户来操作<br>
+只有商品房才是“新增住房单元”</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-19 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5659) <a href="/b0/622.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-621" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/621.html">六年级第一次月考时间10月16日上午  语文8：00~9：30  数学9：40~11：00   
+下午：英语3：00~4：00  综合科4：10~5：00  
+语文、数学、英语考试内容为1—2单元，希各校认真组织落实。（管理组）</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-10-16 通过手机 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4424) <a href="/b6/621.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-620" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b6/620.html">【国庆节、中秋节放假调休通知】根据上级有关规定及雷州市教育局通知要求，现将2020年国庆节、中秋节放假调休日期的具体安排通知如下：1、国庆节、中秋节放假调休时间为10月1日至8日（共8天），调休后9月27日（星期日）、10月10日（星期六）照常上班，学校分别上周三、周四课程；2、要做好放假前安全教育工作（保荐图片）及假期安全提醒工作；3、根据市委市政府要求，节假日期间，各学校要妥善安排好值班和安全、保卫等工作，遇有重大突发事件，要按规定及时报告并妥善处置，确保全体师生度过祥和平安的节假日；各校（园）于9月29日前把值班表发到收发群。【杨家镇中心小学2020.9.24】</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-09-24 通过手机 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4918) <a href="/b6/620.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
       <div id="log-619" class="post_list">
 	        <div class="excerpt">
 	  	  <div class="textPost" data-url="/b6/619.html">【通知】各小学：现定于9月23日（星期三）下午3：00在管理组五楼召开教学教研工作会议，参加会议人员：教导主任（或管教学副校长）。［管理组2020年9月22日下午发送］</div>	  
@@ -372,7 +494,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-22 通过手机 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4227) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4970) <a href="/b6/619.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -396,7 +518,7 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2020-09-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4044) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4622) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
@@ -417,109 +539,11 @@ cho 执行完成</code></pre></div>
 	  <div class="meta">
 	  <p class="time">2020-09-17 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5789) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-616" class="post_list">
-	  <a href="/b0/616.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">第36个教师节：四年级四个学生，1男3女</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/616.html"><center><a href="/assets/file/2020/09/202009101.jpg" data-fancybox="gallery"><img src="/assets3/file/2020/09/202009101.jpg" width="100%" height="auto" </a></center></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-09-10 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3931) <a href="/b0/616.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-614" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b8/614.html">正在运送课本回校（林继、黄丽、陈娇凤），按班级分拣好课本。开始使用网上登记报名，核对学生、家长身份证号码、家长手机号码。<br>
-
-<a href="/assets/file/2020/08/2020082701.webp" data-fancybox="gallery"><img src="/assets3/file/2020/08/2020082701.webp" style="max-width:100%;"></a></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-28 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4013) <a href="/b8/614.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-613" class="post_list">
-	        <div class="excerpt">
-	  	  <div class="textPost" data-url="/b6/613.html">【通知】各小学：1、2020年秋季学生作业本费：一、二年级每生6元，三至六年级每生10元；2、2020年秋季三至六年级教辅材料费：三年级语、数、英合计18.87，二维码缴款价：18.5元；四年级语、数、英合计17.65，二维码缴款价：17.5元；五年级语、数、英合计25.85，二维码缴款价：25.5元；六年级语、数、英合计26.57，二维码缴款价：26.5元。请先录入《杨家镇XX小学（园）2020年秋季开具学生缴款电子票据名册表》到记账组打印缴款二维码，然后把缴款二维码发给学生家长缴款（或由班主任代缴）。[杨家镇中心管理组2020年8月27日上午发送]</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-27 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4649) <a href="/b6/613.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-612" class="post_list">
-	  <a href="/b2/612.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">2020年教科版小学科学新教材远程直播培训研讨会-账号激活</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b2/612.html"><p>尊敬的林继老师： </p><p>      
-您好！感谢您观看2020年教科版小学科学新教材远程直播培训研讨会，您的帐号于2020-07-29 15:15:08 创建成功！ </p><p>      
-用户名：1405154 
-</p><p>      
-密码：674825 
-</p><p>      
-为了顺利观看2020年教科版小学科学新教材远程直播培训研讨会，请您于8月7日前登录<a href="http://www.kemiketang.com/" target="_blank">科米课堂</a>官网进行账号激活，具体流程如下图： </p><p>    
- 温馨提示： 
-请您使用windows版本电脑，下载谷歌Google、Chrome、360或火狐等浏览器访问<a href="http://www.kemiketang.com/" target="_blank">科米课堂</a>官网进行账号激活。（不建议使用苹果系统自带的Safari浏览器，且暂不支持手机端登录及观看。）</p></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-09 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(14019) <a href="/b2/612.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-611" class="post_list">
-	  <a href="/b0/611.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">快讯！我市公布2020年高中阶段学校录取控制分数线：第一批普通高中最低录取控制分数线为500分，第二批为400分</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/611.html">        2020年湛江市高中阶段学校录取控制分数线已划定。其中，第一批普通高中学校最低录取控制分数线为500分；公办国家级示范性和省一级普通高中学校指标生最低录取控制分数线为500分；第二批普通高中学校最低录取控制分数线为400分。（<a href="/pdf/web/viewer.html?file=/assets/file/2020/08/湛教函〔2020〕159号：关于公布湛江市2020年高中阶段学校录取控制分数线的通知.pdf" target="_blank">见附件</a>）<br><br>
-    第一批普通高中特长生最低录取控制分数线为450分，术科65分;第二批为360分，术科为50分。特长生录取分数线按考生中考成绩、术科成绩合成的总分（计算公式为考生总分=中考成绩×30%+术科成绩×9.4×70%）从高到低、依照志愿顺序进行划定。具有国家一级、二级运动员资格和备战广东省中学生运动会比赛的运动队考生，凭有关证明材料免试录取。</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-06 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4529) <a href="/b0/611.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-610" class="post_list">
-	  <a href="/b0/610.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">湛江中考成绩今天16:00公布！查分方式</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b0/610.html">湛江市教育局发布关于2020年初中毕业生学业考试成绩发布及申请复查的通知。湛江市中考成绩8月4日16:00由市教育局统一发布，考生可通过“粤省事”小程序查询考试成绩。<br><br>
-
-<b>查询方式</b><br>
-
-1.在微信登录“粤省事”小程序（首次登录可从微信“发现”功能页进入小程序页面进行搜索注册）；</div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-04 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4150) <a href="/b0/610.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-609" class="post_list">
-	  <a href="/b2/609.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">说说2020年广东省教师继续教育学时</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b2/609.html">如果学习了 2020年蓝天职务培训，就可以得到 54学时。学完公需课即可得 30 学时，还有刚学的专业科目4分，8月3日还有师德师风4学时，2020年度学时已经达标，可以打印继续教育证书。这个班班通学时好像又变得有点鸡肋了。<br>
-<hr>
-世行贷款“班班通”教学平台项目学校教师应用培训-雷州（第一期）<br>
-起止时间：2020-06-30 ~ 2020-08-07<br><br>
-
-全部完成后，只得到 70.64分（最高可以考到90多分），还有四个项目需要辅导教师批改才有分：教学设计、教学反思、教学实录、（鸿合）在线知识测试。<br><br>
-<div style="clear: both; border-left: 0pt solid rgb(214, 192, 148); width: 100%;"><div style="background-color: rgb(230, 238, 247); border-bottom: 1px dashed rgb(64, 138, 183) ! important; color: rgb(63, 103, 165); font-weight: bold; padding: 5px;"><i class="fas fa-download"></i> 下载文件 </div><div style="border-color: -moz-use-text-color rgb(230, 238, 247) rgb(230, 238, 247); border-style: none solid solid; border-width: 0pt 1px 1px; color: #E6EEF7; padding: 10px;"><a target="_blank" href="/assets/file/2020/08/（鸿合）在线知识测试答案.txt" style="">（鸿合）在线知识测试答案.txt</a></div></div></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2020-08-02 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5251) <a href="/b2/609.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(6629) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：1148 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-57.html'>&lt;</a><a href='index-56.html'>56</a><a href='index-57.html'>57</a><span class="current">58</span><a href='index-59.html'>59</a><a href='index-60.html'>60</a><a href='index-59.html'>&gt;</a><a href='index-115.html'>尾页</a>	</div>
+		<span class="info"> 共计：1155 条记录 每页:10条</span><a href='index-1.html'>首页</a><a href='index-57.html'>&lt;</a><a href='index-56.html'>56</a><a href='index-57.html'>57</a><span class="current">58</span><a href='index-59.html'>59</a><a href='index-60.html'>60</a><a href='index-59.html'>&gt;</a><a href='index-116.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -558,7 +582,7 @@ cho 执行完成</code></pre></div>
 
 <a target="_blank" href="https://v3.dconline.net.cn" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
-<span class="unget" title=""><!-- 专业课开始 -->0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
+<span class="unget" title=""><!-- 专业课开始 -->26</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
 </a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://v3.dconline.net.cn" title="">专业课</a></p>
 
 </div>
@@ -567,7 +591,7 @@ cho 执行完成</code></pre></div>
 
 <a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
 
-<span class="unget" title=""><!-- 公需课开始 -->0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/30</strong>
+<span class="unget" title=""><!-- 公需课开始 -->30</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/30</strong>
 </a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title="">公需课</a></p>
 
 </div>
@@ -857,7 +881,7 @@ cho 执行完成</code></pre></div>
 	          </div>	  
 	       <div class="widget">
         <h3>最新评论</h3>     
-		           <ul class="comment"><li><a href="828.html#Com-48">徐建伟 : 今年是大年初六，我们已开</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="828.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="828.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="935.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="559.html#Com-37">徐建伟 : 全部显示我终于知道怎么回</a></li><li><a href="559.html#Com-36">徐建伟 : 方便加个QQ吗99369</a></li></ul>	 
+		           <ul class="comment"><li><a href="1236.html#Com-52">徐建伟 : 老林老师好，老朋友过来拜</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-48">徐建伟 : 今年是大年初六，我们已开</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="828.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="828.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="935.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="559.html#Com-37">徐建伟 : 全部显示我终于知道怎么回</a></li></ul>	 
               </div>	  
 	       <div class="widget">
         <h3>友情链接</h3>     
